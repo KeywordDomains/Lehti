@@ -9,18 +9,30 @@
 
 <?php
   if (have_posts()) : while (have_posts()) : the_post();
+  
+  	$imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+	$largeFeature = ($imgdata[1] > 1100) ? true : false;
+
   ?>
-<?php if(has_post_thumbnail()) { ?>
+<?php if(has_post_thumbnail() && $largeFeature) { ?>
 	<?php get_template_part('single', 'head'); ?>
 <?php } ?>
+
+<?php
+
+?>
 
 <div id="main" role="main" class="hfeed">
 	<section id="content" <?php post_class(); ?>>
 	 	<div class="post-inner">
-	 		<?php if(!has_post_thumbnail()) { ?>
+	 		<?php if(!has_post_thumbnail() || !$largeFeature) { ?>
 				<h1 class="entry-title beta"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			<?php } ?>
-			 <div class="entry-content"><?php the_content(__('(more...)')); ?>
+			 <div class="entry-content">
+			 	<?php if(has_post_thumbnail() && !$largeFeature) {
+			 		the_post_thumbnail('single_image', array('class' => 'alignright'));
+			 	} ?>
+			 	<?php the_content(__('(more...)')); ?>
 
 			 	 <?php wp_link_pages( ); ?> 
 			 </div>

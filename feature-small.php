@@ -22,7 +22,7 @@
 			</div>
 			<div class="inner">
 				<div class="article">
-					<h2 class="post-title">
+					<h2 class="gamma post-title">
 						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 					</h2>
 					<div class="nav">

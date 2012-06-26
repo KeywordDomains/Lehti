@@ -9,7 +9,7 @@
 	?>
 
 	<?php
-		get_template_part('feature', $boloday[3]);
+		get_template_part('feature', 'multiple');
 	?>
 
 	<div id="main" role="main">

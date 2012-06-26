@@ -49,6 +49,8 @@ get_template_part('nhp', 'options');
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'homepage_thumbnail', 300, 150, true );
 		add_image_size( 'feature_full', 1920, 850, true );
+		add_image_size( 'feature_multiple', 650, 400, true );
+		add_image_size( 'single_image', 300, 205, true );
 		add_image_size( 'square', 100, 100, true );
 	
 		add_theme_support( 'automatic-feed-links' );
