@@ -1,0 +1,392 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: boloday\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-27 10:58+0100\n"
+"PO-Revision-Date: 2012-06-27 16:47+0100\n"
+"Last-Translator: Lucas Nolte <lnolte@i.biz>\n"
+"Language-Team: Lucas Nolte <lnolte@i.biz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "Nothing found here"
+msgstr "Rien n'a été trouvé ici"
+
+#: ../404.php:16
+msgid "The page you've requested <strong>can not be displayed</strong>. It appears you've missed your intended destination, either trough a bad or outdated link, or a typo in the page you were hoping to reach."
+msgstr "La page que vous avez demandé <strong> ne peut pas être affichée </ strong>. Il semblerait que vous n'êtes pas arrivé à votre destination souhaitée car le lien est périmé ou mauvais, ou en raison d'une faute de frappe dans la page que vous espériez atteindre. "
+
+#: ../comments.php:11
+msgid "Enter your password to view comments."
+msgstr "Entrez votre mot de passe pour afficher les commentaires."
+
+#: ../comments.php:14
+msgid "No Comments"
+msgstr "Aucun commentaire"
+
+#: ../comments.php:14
+#: ../loop-main.php:23
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#: ../comments.php:14
+#: ../loop-main.php:23
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#: ../comments.php:27
+msgid "No comments yet."
+msgstr "Aucun commentaire pour le moment"
+
+#: ../comments.php:31
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Vous devez être connecté href=\"%s\"> <a </ a> pour publier un commentaire."
+
+#: ../comments.php:37
+msgid "Name (required)"
+msgstr "Nom (obligatoire)"
+
+#: ../comments.php:40
+msgid "Email (will not be published) (required)"
+msgstr "Email (ne sera pas publié) (obligatoire)"
+
+#: ../comments.php:43
+msgid "Website"
+msgstr "Site Web"
+
+#: ../comments.php:49
+msgid "Post Comment"
+msgstr "Publier le commentaire"
+
+#: ../comments.php:50
+msgid "Leave a reply"
+msgstr "Laisser une réponse"
+
+#: ../comments.php:51
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Connecté en tant que <a href=\"%1$s\">% 2$s</a>. <a href=\"%3$s\" title=\"Déconnectez-vous de ce compte\">Se déconnecter ?</a>"
+
+#: ../footer.php:12
+msgid "Proudly powered by <a href=\"http://wordpress.org\">WordPress"
+msgstr "Fièrement propulsé par WordPress <a href=\"http://wordpress.org\">"
+
+#: ../functions.php:105
+msgid "Comment"
+msgstr "Commentaire"
+
+#: ../functions.php:105
+msgid "Trackback"
+msgstr "Rétrolien"
+
+#: ../functions.php:105
+msgid "Pingback"
+msgstr "Pingback"
+
+#: ../functions.php:105
+msgid "by"
+msgstr "par"
+
+#: ../functions.php:105
+msgid "Edit This"
+msgstr "Modifier"
+
+#: ../header.php:32
+msgid "Your browser is <em>ancient!</em> <a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">install Google Chrome Frame</a> to experience this site."
+msgstr "Votre navigateur est <em>ancien !</em> <a href=\"http://browsehappy.com/\">Mettre à jour avec un autre navigateur</a> ou <a href=\"http://www.google.com/chromeframe/?redirect=true\">installer Google Chrome Frame</a> pour découvrir ce site."
+
+#: ../index.php:43
+#: ../page-contact.php:123
+#: ../page-full.php:42
+#: ../page-sitemap.php:33
+msgid "Sorry, no posts matched your criteria."
+msgstr "Désolé, aucun article ne correspond à vos critères."
+
+#: ../loop-main.php:23
+msgid "0 Comments"
+msgstr "0 Commentaire"
+
+#: ../nhp-options.php:26
+msgid "A Section added by hook"
+msgstr "Une section ajoutée par le crochet"
+
+#: ../nhp-options.php:27
+msgid "<p class=\"description\">This is a section created by adding a filter to the sections array, great to allow child themes, to add/remove sections from the options.</p>"
+msgstr "<p class=\"description\"> Cette section fut créée en ajoutant un filtre au tableau des sections, qui sert à ajouter les thèmes enfants, et à ajouter/supprimer des sections des options. </p>"
+
+#: ../nhp-options.php:85
+msgid "<p>This is the HTML which can be displayed before the form, it isnt required, but more info is always better. Anything goes in terms of markup here, any HTML.</p>"
+msgstr "<p>Ce code HTML peut être affiché avant le formulaire. Cela n'est pas nécessaire, mais plus d 'info est toujours préférable. Ici, tout est permis en terme de balisage, tout code HTML.</p>"
+
+#: ../nhp-options.php:109
+msgid "Theme Options"
+msgstr "Options du thème"
+
+#: ../nhp-options.php:112
+msgid "Boloday Theme Options"
+msgstr "Options du thème Boloday"
+
+#: ../nhp-options.php:139
+msgid "Theme Information 1"
+msgstr "Informations du thème 1"
+
+#: ../nhp-options.php:140
+#: ../nhp-options.php:145
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr "<p> C'est le contenu de l'onglet, HTML est autorisé. </p>"
+
+#: ../nhp-options.php:144
+msgid "Theme Information 2"
+msgstr "Informations du Thème 2"
+
+#: ../nhp-options.php:149
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr "<p>C'est le contenu de la barre latérale, HTML est autorisé.</p>"
+
+#: ../nhp-options.php:156
+msgid "General Settings"
+msgstr "Paramètres généraux"
+
+#: ../nhp-options.php:157
+msgid "<p class=\"description\">Do some hawt stuff like custom logo and colors and stuff. Pretty Hawt!</p>"
+msgstr "<p class=\"description\">Faites des choses cool comme un logo personnalisé, des couleurs et autres. Ça c'est cool !</p>"
+
+#: ../nhp-options.php:173
+msgid "Style"
+msgstr "Style"
+
+#: ../nhp-options.php:174
+msgid "You can choose from a variety of color schemes."
+msgstr "Vous pouvez choisir parmi une variété de couleurs."
+
+#: ../nhp-options.php:175
+msgid "Color schemes change the colors of your blog."
+msgstr "Les palettes de couleurs changent les couleurs de votre blog."
+
+#: ../nhp-options.php:182
+msgid "Feature Size"
+msgstr "Taille de la photo à la une"
+
+#: ../nhp-options.php:183
+msgid "Determines the size of the feature (the big images)."
+msgstr "Déterminer la taille de la photo à la une. "
+
+#: ../nhp-options.php:184
+msgid "Can either span across the whole viewport or be locked to the content width"
+msgstr "Peut s'étendre sur la largeur de la fenêtre ou être limité à la largeur du contenu."
+
+#: ../nhp-options.php:236
+msgid "<strong>Theme URL:</strong> "
+msgstr "<strong>URL du thème :</strong> "
+
+#: ../nhp-options.php:237
+msgid "<strong>Author:</strong> "
+msgstr "<strong>Autheur:</strong> "
+
+#: ../nhp-options.php:238
+msgid "<strong>Version:</strong> "
+msgstr "<strong>Version:</strong> "
+
+#: ../nhp-options.php:240
+msgid "<strong>Tags:</strong> "
+msgstr "<strong>Balises:</strong> "
+
+#: ../nhp-options.php:247
+msgid "Theme Information"
+msgstr "Information du thème"
+
+#: ../page-contact.php:10
+msgid "Please enter your name."
+msgstr "Veuillez entrer votre nom."
+
+#: ../page-contact.php:17
+msgid "Please enter your email address."
+msgstr "Veuillez entrer votre adresse e-mail."
+
+#: ../page-contact.php:20
+msgid "You entered an invalid email address."
+msgstr "Vous avez entré une adresse e-mail invalide. "
+
+#: ../page-contact.php:27
+msgid "Please enter a message."
+msgstr "Veuillez entrer un message. "
+
+#: ../page-contact.php:72
+#: ../page-full.php:28
+#: ../page-sitemap.php:29
+msgid "(more...)"
+msgstr "(suite...)"
+
+#: ../page-contact.php:77
+msgid "Thanks! Your Message has been sent."
+msgstr "Merci! Votre message a été envoyé."
+
+#: ../page-contact.php:83
+msgid "Sorry an error occured"
+msgstr "Désolé, une erreur s'est produite."
+
+#: ../page-contact.php:88
+msgid "Your Name"
+msgstr "Votre nom"
+
+#: ../page-contact.php:95
+msgid "Your Email"
+msgstr "Votre e-mail"
+
+#: ../page-contact.php:102
+msgid "Your Message"
+msgstr "Votre message"
+
+#: ../page-sitemap.php:41
+msgid "Pages"
+msgstr "Pages"
+
+#: ../page-sitemap.php:48
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../page-sitemap.php:55
+msgid "Posts per Category"
+msgstr "Billets par catégorie"
+
+#: ../page-sitemap.php:69
+msgid "Comments"
+msgstr "Commentaires"
+
+#: ../search.php:9
+#, php-format
+msgid "Search results for \"%s\""
+msgstr "Résultats pour \"%\""
+
+#: ../sidebar.php:8
+msgid "Categories:"
+msgstr "Catégories :"
+
+#: ../sidebar.php:12
+msgid "Search:"
+msgstr "Recherche :"
+
+#: ../sidebar.php:16
+msgid "Search"
+msgstr "Recherche"
+
+#: ../sidebar.php:21
+msgid "Archives:"
+msgstr "Archives :"
+
+#: ../sidebar.php:25
+msgid "Meta:"
+msgstr "Meta :"
+
+#: ../sidebar.php:29
+msgid "Syndicate this site using RSS"
+msgstr "Suivre ce site par RSS"
+
+#: ../sidebar.php:29
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Sydincation\">RSS</abbr>"
+
+#: ../sidebar.php:30
+msgid "The latest comments to all posts in RSS"
+msgstr "Les derniers commentaires pour tous les messages du RSS"
+
+#: ../sidebar.php:30
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Commentaires <abbr title=\"Really Simple Sydincation\">RSS</abbr>"
+
+#: ../sidebar.php:31
+msgid "This page validates as XHTML 1.0 Transitional"
+msgstr "Ceci est une page XHTML 1.0 Transitional valide"
+
+#: ../sidebar.php:31
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "Valide <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+
+#: ../sidebar.php:33
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Propulsé par WordPress, plate-forme sémantique de publication personnelle de pointe."
+
+#: ../single-head.php:28
+#: ../single.php:37
+msgid "Photo &copy;"
+msgstr "Photo &copy;"
+
+#: ../single.php:98
+msgid "Related Posts"
+msgstr "Messages correspondants"
+
+#: ../inc/breadcrumbs.php:5
+msgid "You are here"
+msgstr "Vous êtes ici"
+
+#: ../inc/breadcrumbs.php:6
+msgid "Home"
+msgstr "Accueil"
+
+#: ../inc/breadcrumbs.php:9
+msgid "Posts Tagged"
+msgstr "Messages étiquetés"
+
+#: ../inc/breadcrumbs.php:11
+#: ../inc/breadcrumbs.php:13
+#: ../inc/breadcrumbs.php:15
+msgid "Posts made in"
+msgstr "Messages fait le"
+
+#: ../inc/breadcrumbs.php:29
+msgid "Posts by "
+msgstr "Messages envoyé par"
+
+#: ../inc/widgets/flickr.php:59
+msgid "Number:"
+msgstr "Numéro :"
+
+#: ../inc/widgets/flickr.php:67
+msgid "Type:"
+msgstr "Type :"
+
+#: ../inc/widgets/flickr.php:69
+msgid "User"
+msgstr "Utilisateur"
+
+#: ../inc/widgets/flickr.php:70
+msgid "Group"
+msgstr "Groupe"
+
+#: ../inc/widgets/flickr.php:74
+msgid "Sorting:"
+msgstr "Tri :"
+
+#: ../inc/widgets/flickr.php:76
+msgid "Latest"
+msgstr "Dernière"
+
+#: ../inc/widgets/flickr.php:77
+msgid "Random"
+msgstr "Aléatoire"
+
+#: ../inc/widgets/flickr.php:81
+msgid "Size:"
+msgstr "Taille :"
+
+#: ../inc/widgets/flickr.php:83
+msgid "Square"
+msgstr "Carré"
+
+#: ../inc/widgets/flickr.php:84
+msgid "Medium"
+msgstr "Moyen"
+
+#: ../inc/widgets/flickr.php:85
+msgid "Thumbnail"
+msgstr "Imagette"
+
