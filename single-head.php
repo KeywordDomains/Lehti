@@ -15,7 +15,7 @@
 						<h1 class="entry-title post-title beta">
 							<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 						</h1>
-						<div class="meta">by <?php the_author(); ?> | <?php the_date('m/d/y'); ?></div>
+						<div class="meta"><?php _e('by', 'boloday'); ?> <?php the_author(); ?> | <?php the_date('m/d/y'); ?></div>
 					</div>
 				</div>
 			</li>

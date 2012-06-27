@@ -25,7 +25,7 @@
 	<section id="content" class="full page hentry">
 	 	<div class="page-inner">	
 			<h1 class="post-title beta"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			 <div class="post"><?php the_content(__('(more...)')); ?></div>
+			 <div class="post"><?php the_content(__('(more...)', 'boloday')); ?></div>
 				<?php
 				get_template_part('inc/breadcrumbs');
 			  	comments_template();
@@ -39,7 +39,7 @@
 <?php
 endwhile; else: ?>
 
-		<p>Sorry, no posts matched your criteria.</p>
+		<p><?php _e('Sorry, no posts matched your criteria.', 'boloday'); ?></p>
 
 <?php
   endif;

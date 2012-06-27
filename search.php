@@ -6,7 +6,7 @@
 
 	<div id="main" role="main">
 		<section id="content">
-			<h1 class="beta title">Search results for "<?php the_search_query(); ?>"</h1>
+			<h1 class="beta title"><?php sprintf(__('Search results for "%s"', 'boloday'), the_search_query()); ?></h1>
 			<div class="parent">	
 				<?php get_template_part('loop', 'main'); ?>
 			</div>

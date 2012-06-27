@@ -2,19 +2,19 @@
 		
 	<?php if(function_exists('bcn_display')) { bcn_display(); } 
 		  else { ?>
-				<span>You are here:</span>
-				<a href="<?php echo home_url(); ?>">Home</a> 
+				<span><?php _e('You are here', 'boloday'); ?>:</span>
+				<a href="<?php echo home_url(); ?>"><?php _e('Home', 'boloday'); ?></a> 
 				
 				<?php if( is_tag() ) { ?>
-					Posts Tagged &quot;<?php single_tag_title(); echo('&quot;'); ?>
+					<?php _e('Posts Tagged', 'boloday'); ?> &quot;<?php single_tag_title(); echo('&quot;'); ?>
 				<?php } elseif (is_day()) { ?>
-					Posts made in <?php the_time('F jS, Y'); ?>
+					<?php _e('Posts made in', 'boloday'); ?> <?php the_time('F jS, Y'); ?>
 				<?php } elseif (is_month()) { ?>
-					Posts made in <?php the_time('F, Y'); ?>
+					<?php _e('Posts made in', 'boloday'); ?> <?php the_time('F, Y'); ?>
 				<?php } elseif (is_year()) { ?>
-					Posts made in <?php the_time('Y'); ?>
+					<?php _e('Posts made in', 'boloday'); ?> <?php the_time('Y'); ?>
 				<?php } elseif (is_search()) { ?>
-					Search results for <?php the_search_query() ?>
+					<?php e('Search results for', 'boloday'); ?> <?php the_search_query() ?>
 				<?php } elseif (is_single()) { ?>
 					<?php $category = get_the_category();
 						  if (!empty($category)) { 
@@ -26,7 +26,7 @@
 				<?php } elseif (is_author()) { ?>
 					<?php global $wp_query;
 						  $curauth = $wp_query->get_queried_object(); ?>
-					<?php _e('Posts by ','themejunkie'); echo ' ',$curauth->nickname; ?>
+					<?php _e('Posts by ','boloday'); echo ' ',$curauth->nickname; ?>
 				<?php } elseif (is_page()) { ?>
 					<?php wp_title(''); ?>
 				<?php }; ?>

@@ -186,6 +186,15 @@ $sections[] = array(
 						'std' => 'full'
 						),
 						array(
+							'id' => '6',
+							'type' => 'select',
+							'title' => 'Homepage Slider Type',
+							'sub_desc' => 'Specify the type of slider to be displayed on the frontpage',
+							'desc' => 'Either display a large slider with only features, or a smaller one, with subfeatures',
+							'options' => array('default' => 'Single Slider', 'multiple' => 'Slider with Subfeatures'),
+							'std' => 'default'
+						),
+						array(
 							'id' => '4',
 							'type' => 'text',
 							'title' => 'Tag for featured posts',

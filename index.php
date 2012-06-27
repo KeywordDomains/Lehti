@@ -9,7 +9,11 @@
 	?>
 
 	<?php
-		get_template_part('feature', 'multiple');
+		if(@$boloday[6] == 'multiple') {
+			get_template_part('feature', 'multiple');
+		} else {
+			get_template_part('feature', $boloday[3]);
+		}
 	?>
 
 	<div id="main" role="main">
@@ -36,7 +40,7 @@
 
 <?php else: ?>
 
-  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+  <p><?php _e('Sorry, no posts matched your criteria.', 'boloday'); ?></p>
 
 <?php
 

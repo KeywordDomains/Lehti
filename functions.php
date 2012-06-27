@@ -13,6 +13,11 @@ include('inc/widgets/adsmall.php');
 // =====================================================
 get_template_part('nhp', 'options');
 
+add_action('after_setup_theme', 'boloday_theme_setup');
+function boloday_theme_setup(){
+    load_theme_textdomain('boloday', get_template_directory() . '/languages');
+}
+
 	// ============================================================
 	//	Theme Setup
 	// ============================================================
@@ -97,7 +102,7 @@ get_template_part('nhp', 'options');
 		</div>
 		<div class="comment">
 			<?php comment_text() ?>
-			<p class="comment-meta"><cite><?php comment_type(__('Comment'), __('Trackback'), __('Pingback')); ?> <?php _e('by'); ?> <?php comment_author_link() ?> &#8212; <?php comment_date() ?> @ <a href="#comment-<?php comment_ID() ?>"><?php comment_time() ?></a></cite> <?php edit_comment_link(__("Edit This"), ' |'); ?></p>
+			<p class="comment-meta"><cite><?php comment_type(__('Comment', 'boloday'), __('Trackback', 'boloday'), __('Pingback', 'boloday')); ?> <?php _e('by', 'boloday'); ?> <?php comment_author_link() ?> &#8212; <?php comment_date() ?> @ <a href="#comment-<?php comment_ID() ?>"><?php comment_time() ?></a></cite> <?php edit_comment_link(__("Edit This", 'boloday'), ' |'); ?></p>
 		</div>
 	</li>
 	<?php

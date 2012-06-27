@@ -7,24 +7,24 @@
 
   if(isset($_POST['submitted'])) {
   	if(trim($_POST['contactname']) === '') {
-			$nameError = 'Please enter your name.';
+			$nameError = __('Please enter your name.', 'boloday');
 			$hasError = true;
 		} else {
 			$name = trim($_POST['contactname']);
 		}
 		
 		if(trim($_POST['email']) === '')  {
-			$emailError = 'Please enter your email address.';
+			$emailError = __('Please enter your email address.', 'boloday');
 			$hasError = true;
 		} else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
-			$emailError = 'You entered an invalid email address.';
+			$emailError = __('You entered an invalid email address.', 'boloday');
 			$hasError = true;
 		} else {
 			$email = trim($_POST['email']);
 		}
 			
 		if(trim($_POST['message']) === '') {
-			$commentError = 'Please enter a message.';
+			$commentError = __('Please enter a message.', 'boloday');
 			$hasError = true;
 		} else {
 			if(function_exists('stripslashes')) {
@@ -74,32 +74,32 @@
 			<?php if(isset($emailSent) && $emailSent == true) { ?>
 					
 		                <div class="alert success">
-		                    Thanks! Your Message has been sent.
+		                    <?php _e('Thanks! Your Message has been sent.', 'boloday'); ?>
 		                </div><!-- .thanks -->
 		                
 		            <?php } ?>
 		
 		                <?php if(isset($hasError) || isset($captchaError)) { ?>
-		                    <div class="alert error">Sorry an error occured</div>
+		                    <div class="alert error"><?php _e('Sorry an error occured', 'boloday'); ?></div>
 		                <?php } ?>
 			
 			<form id="contactForm" method="post" action="<?php the_permalink(); ?>">
 				<p>
-					<label for="contactname">Your Name</label><br>
+					<label for="contactname"><?php _e('Your Name', 'boloday'); ?></label><br>
 					<input type="text" name="contactname" id="contactname" value="<?php if(isset($_POST['contactname']))  echo $_POST['contactname'];?>">
 					<?php if(isset($nameError)) { ?>
 		                                <div class="alert error"><?php echo $nameError; ?></div>
 		                            <?php } ?>
 				</p>
 				<p>
-					<label for="email">Your Email</label><br>
+					<label for="email"><?php _e('Your Email', 'boloday'); ?></label><br>
 					<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>">
 					<?php if(isset($emailError)) { ?>
 		                                <div class="alert error"><?php echo $emailError; ?></div>
 		                            <?php } ?>
 				</p>
 				<p>
-					<label for="message">Your Message</label><br>
+					<label for="message"><?php _e('Your Message', 'boloday'); ?></label><br>
 					<textarea name="message" id="message" rows="12"><?php if(isset($_POST['message']))  echo $_POST['message'];?></textarea>
 					<?php if(isset($commentError)) { ?>
 		                                <div class="alert error"><?php echo $commentError; ?></div>
@@ -120,7 +120,7 @@
 <?php
 endwhile; else: ?>
 
-		<p>Sorry, no posts matched your criteria.</p>
+		<p><?php _e('Sorry, no posts matched your criteria.', 'boloday'); ?></p>
 
 <?php
   endif;

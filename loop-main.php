@@ -20,7 +20,7 @@
 		<div class="post-meta">
 			<span class="vcard author"><span class="fn"><?php the_author(); ?></span></span>
 			<abbr class="date published updated" title="<?php the_date('r'); ?>"><?php echo get_the_date('m/d'); ?></abbr>
-			<span class="comments"><?php comments_popup_link(__('0 Comments'), __('1 Comment'), __('% Comments')) ?></span>
+			<span class="comments"><?php comments_popup_link(__('0 Comments', 'boloday'), __('1 Comment', 'boloday'), __('% Comments', 'boloday')) ?></span>
 		</div>
 	</article>
 <?php endwhile; ?>

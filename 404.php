@@ -11,9 +11,9 @@
 <div id="main" role="main">
 	<section id="content" class="post hentry">
 	 	<div class="page-inner">	
-			<h1 class="page-title beta">Nothing found here <small>Error 404</small></h1>
+			<h1 class="page-title beta"><?php _e('Nothing found here', 'boloday'); ?> <small>Error 404</small></h1>
 			 <div class="post">
-			 	<p>The page you've requested <strong>can not be displayed</strong>. It appears you've missed your intended destination, either trough a bad or outdated link, or a typo in the page you were hoping to reach.</p>
+			 	<p><?php _e('The page you\'ve requested <strong>can not be displayed</strong>. It appears you\'ve missed your intended destination, either trough a bad or outdated link, or a typo in the page you were hoping to reach.', 'boloday'); ?></p>
 			 </div>
 		</div>
 		

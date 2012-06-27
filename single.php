@@ -32,7 +32,7 @@
 			 	<?php if(has_post_thumbnail() && !$largeFeature) {
 			 		the_post_thumbnail('single_image', array('class' => 'alignright'));
 			 	} ?>
-			 	<?php the_content(__('(more...)')); ?>
+			 	<?php the_content(__('(more...)', 'boloday')); ?>
 
 			 	 <?php wp_link_pages( ); ?> 
 			 </div>
@@ -89,7 +89,7 @@
 						
 							?>
 							<div class="post-foot">
-								<h3>Related Posts</h3>
+								<h3><?php _e('Related Posts', 'boloday'); ?></h3>
 								<ul class="related">
 									<?php while($query->have_posts()) : $query->the_post(); ?>
 										<li>

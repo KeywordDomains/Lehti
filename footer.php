@@ -9,7 +9,7 @@
 				?>
 			</div>
 			<div class="inner copyright">
-				&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>"><?php echo bloginfo('name'); ?></a> | <a href="http://kiev.com">kiev.com</a> | Proudly powered by <a href="http://wordpress.org">WordPress</a>
+				&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>"><?php echo bloginfo('name'); ?></a> | <a href="http://kiev.com">kiev.com</a> | <?php _e('Proudly powered by <a href="http://wordpress.org">WordPress', 'boloday'); ?></a>
 			</div>
 		</footer>
 

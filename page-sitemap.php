@@ -30,7 +30,7 @@
 			<?php
 			endwhile; else: ?>
 
-					<p>Sorry, no posts matched your criteria.</p>
+					<p><?php _e('Sorry, no posts matched your criteria.', 'boloday'); ?></p>
 
 			<?php
 			  endif;
@@ -38,21 +38,21 @@
 
 			<div class="sitemap">
 				<div class="pages">
-					<h2 class="gamma">Pages</h2>
+					<h2 class="gamma"><?php _e('Pages', 'boloday'); ?></h2>
 					<ul>
 						<?php wp_list_pages('depth=0&sort_column=menu_order&title_li='); ?>
 					</ul>
 				</div>
 				
 				<div class="categories">
-					<h2 class="gamma">Categories</h2>
+					<h2 class="gamma"><?php _e('Categories', 'boloday'); ?></h2>
 					<ul>
 						<?php wp_list_categories('show_count=true&title_li=')?>
 					</ul>
 				</div>
 				
 				<div class="post-per-category">
-					<h2 class="gamma">Posts per Category</h2>
+					<h2 class="gamma"><?php _e('Posts per Category', 'boloday'); ?></h2>
 					 <?php
 
 		        $cats = get_categories();
@@ -66,7 +66,7 @@
 
 		            <ul>
 		                <?php while ( have_posts() ) { the_post(); ?>
-		              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> - <?php _e( 'Comments', 'themejunkie' ); ?> (<?php echo $post->comment_count; ?>)</li>
+		              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> - <?php _e( 'Comments', 'boloday' ); ?> (<?php echo $post->comment_count; ?>)</li>
 		              <?php }  ?>
 		            </ul>
 
