@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: boloday\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 10:03+0100\n"
-"PO-Revision-Date: 2012-06-27 10:04+0100\n"
+"POT-Creation-Date: 2012-06-27 10:59+0100\n"
+"PO-Revision-Date: 2012-06-27 10:59+0100\n"
 "Last-Translator: Lucas Nolte <lnolte@i.biz>\n"
 "Language-Team: Lucas Nolte <lnolte@i.biz>\n"
 "MIME-Version: 1.0\n"
@@ -315,7 +315,12 @@ msgstr "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Angetrieben von WordPress, der topmodernen Publishing Plattform."
 
-#: ../single.php:92
+#: ../single-head.php:28
+#: ../single.php:37
+msgid "Photo &copy;"
+msgstr "Foto &copy;"
+
+#: ../single.php:98
 msgid "Related Posts"
 msgstr "Ähnliche Beiträge"
 

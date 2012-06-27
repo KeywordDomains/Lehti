@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
+
 	$('#feature.full li').css('width', window.innerWidth);
 	$(window).on('resize', function(e) {
 		$('#feature.full li').css('width', window.innerWidth);

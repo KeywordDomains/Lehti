@@ -31,6 +31,12 @@
 			 <div class="entry-content">
 			 	<?php if(has_post_thumbnail() && !$largeFeature) {
 			 		the_post_thumbnail('single_image', array('class' => 'alignright'));
+			 		$data = wp_get_attachment_metadata( get_post_thumbnail_id() );
+
+						if($data['image_meta']['copyright']) {
+							 _e('Photo &copy;', 'boloday');
+							 echo $data['image_meta']['copyright'];
+						}
 			 	} ?>
 			 	<?php the_content(__('(more...)', 'boloday')); ?>
 

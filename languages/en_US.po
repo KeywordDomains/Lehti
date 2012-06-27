@@ -1,12 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: boloday\n"
-"POT-Creation-Date: 2012-06-27 09:39+0100\n"
-"PO-Revision-Date: 2012-06-27 09:40+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-27 10:58+0100\n"
+"PO-Revision-Date: 2012-06-27 10:59+0100\n"
 "Last-Translator: Lucas Nolte <lnolte@i.biz>\n"
 "Language-Team: Lucas Nolte <lnolte@i.biz>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
@@ -14,4 +15,378 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "Nothing found here"
+msgstr ""
+
+#: ../404.php:16
+msgid "The page you've requested <strong>can not be displayed</strong>. It appears you've missed your intended destination, either trough a bad or outdated link, or a typo in the page you were hoping to reach."
+msgstr ""
+
+#: ../comments.php:11
+msgid "Enter your password to view comments."
+msgstr ""
+
+#: ../comments.php:14
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:14
+#: ../loop-main.php:23
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:14
+#: ../loop-main.php:23
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:27
+msgid "No comments yet."
+msgstr ""
+
+#: ../comments.php:31
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../comments.php:37
+msgid "Name (required)"
+msgstr ""
+
+#: ../comments.php:40
+msgid "Email (will not be published) (required)"
+msgstr ""
+
+#: ../comments.php:43
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:49
+msgid "Post Comment"
+msgstr ""
+
+#: ../comments.php:50
+msgid "Leave a reply"
+msgstr ""
+
+#: ../comments.php:51
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: ../footer.php:12
+msgid "Proudly powered by <a href=\"http://wordpress.org\">WordPress"
+msgstr ""
+
+#: ../functions.php:105
+msgid "Comment"
+msgstr ""
+
+#: ../functions.php:105
+msgid "Trackback"
+msgstr ""
+
+#: ../functions.php:105
+msgid "Pingback"
+msgstr ""
+
+#: ../functions.php:105
+msgid "by"
+msgstr ""
+
+#: ../functions.php:105
+msgid "Edit This"
+msgstr ""
+
+#: ../header.php:32
+msgid "Your browser is <em>ancient!</em> <a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">install Google Chrome Frame</a> to experience this site."
+msgstr ""
+
+#: ../index.php:43
+#: ../page-contact.php:123
+#: ../page-full.php:42
+#: ../page-sitemap.php:33
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: ../loop-main.php:23
+msgid "0 Comments"
+msgstr ""
+
+#: ../nhp-options.php:26
+msgid "A Section added by hook"
+msgstr ""
+
+#: ../nhp-options.php:27
+msgid "<p class=\"description\">This is a section created by adding a filter to the sections array, great to allow child themes, to add/remove sections from the options.</p>"
+msgstr ""
+
+#: ../nhp-options.php:85
+msgid "<p>This is the HTML which can be displayed before the form, it isnt required, but more info is always better. Anything goes in terms of markup here, any HTML.</p>"
+msgstr ""
+
+#: ../nhp-options.php:109
+msgid "Theme Options"
+msgstr ""
+
+#: ../nhp-options.php:112
+msgid "Boloday Theme Options"
+msgstr ""
+
+#: ../nhp-options.php:139
+msgid "Theme Information 1"
+msgstr ""
+
+#: ../nhp-options.php:140
+#: ../nhp-options.php:145
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../nhp-options.php:144
+msgid "Theme Information 2"
+msgstr ""
+
+#: ../nhp-options.php:149
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../nhp-options.php:156
+msgid "General Settings"
+msgstr ""
+
+#: ../nhp-options.php:157
+msgid "<p class=\"description\">Do some hawt stuff like custom logo and colors and stuff. Pretty Hawt!</p>"
+msgstr ""
+
+#: ../nhp-options.php:173
+msgid "Style"
+msgstr ""
+
+#: ../nhp-options.php:174
+msgid "You can choose from a variety of color schemes."
+msgstr ""
+
+#: ../nhp-options.php:175
+msgid "Color schemes change the colors of your blog."
+msgstr ""
+
+#: ../nhp-options.php:182
+msgid "Feature Size"
+msgstr ""
+
+#: ../nhp-options.php:183
+msgid "Determines the size of the feature (the big images)."
+msgstr ""
+
+#: ../nhp-options.php:184
+msgid "Can either span across the whole viewport or be locked to the content width"
+msgstr ""
+
+#: ../nhp-options.php:236
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../nhp-options.php:237
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../nhp-options.php:238
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../nhp-options.php:240
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../nhp-options.php:247
+msgid "Theme Information"
+msgstr ""
+
+#: ../page-contact.php:10
+msgid "Please enter your name."
+msgstr ""
+
+#: ../page-contact.php:17
+msgid "Please enter your email address."
+msgstr ""
+
+#: ../page-contact.php:20
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: ../page-contact.php:27
+msgid "Please enter a message."
+msgstr ""
+
+#: ../page-contact.php:72
+#: ../page-full.php:28
+#: ../page-sitemap.php:29
+msgid "(more...)"
+msgstr ""
+
+#: ../page-contact.php:77
+msgid "Thanks! Your Message has been sent."
+msgstr ""
+
+#: ../page-contact.php:83
+msgid "Sorry an error occured"
+msgstr ""
+
+#: ../page-contact.php:88
+msgid "Your Name"
+msgstr ""
+
+#: ../page-contact.php:95
+msgid "Your Email"
+msgstr ""
+
+#: ../page-contact.php:102
+msgid "Your Message"
+msgstr ""
+
+#: ../page-sitemap.php:41
+msgid "Pages"
+msgstr ""
+
+#: ../page-sitemap.php:48
+msgid "Categories"
+msgstr ""
+
+#: ../page-sitemap.php:55
+msgid "Posts per Category"
+msgstr ""
+
+#: ../page-sitemap.php:69
+msgid "Comments"
+msgstr ""
+
+#: ../search.php:9
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: ../sidebar.php:8
+msgid "Categories:"
+msgstr ""
+
+#: ../sidebar.php:12
+msgid "Search:"
+msgstr ""
+
+#: ../sidebar.php:16
+msgid "Search"
+msgstr ""
+
+#: ../sidebar.php:21
+msgid "Archives:"
+msgstr ""
+
+#: ../sidebar.php:25
+msgid "Meta:"
+msgstr ""
+
+#: ../sidebar.php:29
+msgid "Syndicate this site using RSS"
+msgstr ""
+
+#: ../sidebar.php:29
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: ../sidebar.php:30
+msgid "The latest comments to all posts in RSS"
+msgstr ""
+
+#: ../sidebar.php:30
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: ../sidebar.php:31
+msgid "This page validates as XHTML 1.0 Transitional"
+msgstr ""
+
+#: ../sidebar.php:31
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr ""
+
+#: ../sidebar.php:33
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: ../single-head.php:28
+#: ../single.php:37
+msgid "Photo &copy;"
+msgstr ""
+
+#: ../single.php:98
+msgid "Related Posts"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:5
+msgid "You are here"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:6
+msgid "Home"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:9
+msgid "Posts Tagged"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:11
+#: ../inc/breadcrumbs.php:13
+#: ../inc/breadcrumbs.php:15
+msgid "Posts made in"
+msgstr ""
+
+#: ../inc/breadcrumbs.php:29
+msgid "Posts by "
+msgstr ""
+
+#: ../inc/widgets/flickr.php:59
+msgid "Number:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:67
+msgid "Type:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:69
+msgid "User"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:70
+msgid "Group"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:74
+msgid "Sorting:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:76
+msgid "Latest"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:77
+msgid "Random"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:81
+msgid "Size:"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:83
+msgid "Square"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:84
+msgid "Medium"
+msgstr ""
+
+#: ../inc/widgets/flickr.php:85
+msgid "Thumbnail"
+msgstr ""
 

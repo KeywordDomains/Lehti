@@ -16,10 +16,14 @@
 		
 		<li>
 			<div class="desktop">
-				<?php the_post_thumbnail('feature_full'); ?>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('feature_full'); ?>
+				</a>
 			</div>
 			<div class="mobile">
-				<?php the_post_thumbnail('homepage_thumbnail'); ?>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('homepage_thumbnail'); ?>
+				</a>
 			</div>
 			<div class="inner">
 				<div class="article">

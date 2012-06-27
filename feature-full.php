@@ -32,6 +32,17 @@
 					</h2>
 				</div>
 			</div>
+
+			<?php
+						$data = wp_get_attachment_metadata( get_post_thumbnail_id() );
+
+						if($data['image_meta']['copyright']) {
+					?>
+				<div class="copyright">
+					<?php _e('Photo &copy;', 'boloday'); ?> <?php echo $data['image_meta']['copyright']; ?>
+				</div>
+				<?php } ?>
+			
 		</li>
 		
 		<?php
