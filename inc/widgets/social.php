@@ -31,7 +31,7 @@ class KWD_Social extends WP_Widget {
 			<ul>
 				<?php if($feed_url != '') { ?>
 				<li class="rss">
-					<a href="http://feeds.feedburner.com/<?php echo $feed_url; ?>">RSS</a>
+					<a href="<?php echo $feed_url; ?>">RSS</a>
 				</li>
 				<?php } if($twitter_id != '') { ?>
 				<li class="twitter">
