@@ -26,7 +26,7 @@
 // ==================================================================
 
 // Link Color
-@linkColor: #f5b92e; // 0a74ba
+@linkColor: #0a74ba; // 0a74ba
 
 // Add another color here, if your link color isn't your primary color
 @primaryColor: @linkColor;
@@ -58,7 +58,7 @@
 //	Typography
 // =================================================================
 html {
-	background: lighten(@primaryColor, 40%);
+	background: lighten(@darkColor, 69%);
 }
 
 body {
@@ -629,13 +629,13 @@ img.ad {
 }
 
 #secondaryNav {
-	border-top: 1px solid darken(@primaryColor, 7%);
+	border-top: 1px solid darken(@primaryColor, 10%);
 	background: @primaryColor;
 	width: @total-width;
 	margin: 8px auto 0;
 	text-transform: uppercase;
 	font-weight: 600;
-	border-bottom: 1px solid darken(@primaryColor, 7%);
+	border-bottom: 1px solid darken(@primaryColor, 9%);
 	width: @total-width + 40;
 
 	ul {
@@ -766,8 +766,6 @@ img.ad {
 	overflow: hidden !important;
 	height: 450px;
 	background: #111;
-	border-bottom: 1px solid lighten(@darkColor, 65%);
-
 	&.small {
 		width: @total-width;
 		margin: 0 auto;
@@ -801,11 +799,10 @@ img.ad {
 		}
 
 		.others {
-			background: lighten(@darkColor, 70%);
 			.column(2);
-			margin-left: -15px;
-			width: 388px;
+			width: 360px;
 			margin-right: 0;
+			margin-left: -15px;
 
 			img {
 				.box-shadow(none);
@@ -814,13 +811,9 @@ img.ad {
 			.entry {
 				background: lighten(@darkColor, 70%);
 				.clearfix();
-				padding: 14px 32px 14px 32px;
+				padding: 8px 24px 8px 24px;
+				margin: 6px 0;
 				border-bottom: 1px solid lighten(@darkColor, 65%);
-
-				&:last-child {
-					border-bottom: none;
-					padding-bottom: 24px;
-				}
 
 				&:hover {
 					background: lighten(desaturate(@primaryColor, 45%), 50%);

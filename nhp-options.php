@@ -173,7 +173,7 @@ $sections[] = array(
 						'title' => __('Style', 'nhp-opts'), 
 						'sub_desc' => __('You can choose from a variety of color schemes.', 'nhp-opts'),
 						'desc' => __('Color schemes change the colors of your blog.', 'nhp-opts'),
-						'options' => array('style' => 'Default','blue' => 'Blue','orange' => 'Orange', 'dark' => 'Dark', 'green' => 'Green'),//Must provide key => value pairs for select options
+						'options' => array('style' => 'Default','blue' => 'Blue','orange' => 'Orange', 'dark' => 'Dark', 'green' => 'Green', 'yellow' => 'Yellow'),//Must provide key => value pairs for select options
 						'std' => 'style'
 						),
 						array(
