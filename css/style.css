@@ -476,8 +476,17 @@ body:after {
  *	.09	Media Queries for Responsive Design
  *	.10 Third Party CSS
  */
+html {
+  background: #fefaf1;
+}
 body {
   color: #444444;
+  background: #fff;
+  width: 1060px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
@@ -1097,15 +1106,14 @@ img.ad.mediumRectangle {
   content: "";
 }
 #secondaryNav {
-  border-top: 1px solid #f4b116;
+  border-top: 1px solid #f3ae0c;
   background: #f5b92e;
   width: 1020px;
-  margin: 0 auto;
+  margin: 8px auto 0;
   text-transform: uppercase;
   font-weight: 600;
-  -webkit-box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #f3ae0c;
+  width: 1060px;
 }
 #secondaryNav ul {
   padding: 0;
@@ -1136,7 +1144,7 @@ img.ad.mediumRectangle {
 }
 #secondaryNav li a {
   display: block;
-  padding: 8px 12px;
+  padding: 12px 12px;
   color: #ffffff;
 }
 #secondaryNav li a:hover {
@@ -1258,12 +1266,10 @@ img.ad.mediumRectangle {
   margin: 0 15px;
 }
 #feature {
-  -webkit-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px -4px rgba(0, 0, 0, 0.2);
   overflow: hidden !important;
-  height: 500px;
+  height: 450px;
   background: #111;
+  border-bottom: 1px solid #eaeaea;
 }
 #feature.small {
   width: 1020px;
@@ -1275,7 +1281,7 @@ img.ad.mediumRectangle {
   width: 1050px;
   margin: 0 -15px;
   *zoom: 1;
-  width: 1020px;
+  width: 1060px;
   margin: 0 auto;
   height: 400px;
 }
@@ -1291,23 +1297,18 @@ img.ad.mediumRectangle {
   top: 200px;
 }
 #feature.multiple img {
-  width: 650px;
+  width: 672px;
   height: 400px;
   min-height: 400px;
-  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.2);
 }
 #feature.multiple .current {
   display: inline;
   float: left;
   width: 650px;
   margin: 0 15px;
+  width: 672px;
   margin-left: 0;
   background: #000;
-  -webkit-box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.2);
 }
 #feature.multiple .others {
   background: #f6f6f6;
@@ -1316,7 +1317,7 @@ img.ad.mediumRectangle {
   width: 310px;
   margin: 0 15px;
   margin-left: -15px;
-  width: 370px;
+  width: 388px;
   margin-right: 0;
 }
 #feature.multiple .others img {
@@ -1363,10 +1364,12 @@ img.ad.mediumRectangle {
   min-height: 100px;
   max-height: 100px;
 }
-#feature img {
-  width: 100%;
+#feature.full li {
+  width: 1060px;
+}
+#feature.full img {
+  width: 1060px;
   height: auto;
-  min-height: 500px;
 }
 #feature ul {
   list-style: none;
@@ -1386,7 +1389,7 @@ img.ad.mediumRectangle {
 }
 #feature li .copyright {
   position: absolute;
-  bottom: 4px;
+  bottom: 24px;
   right: 50px;
   background: rgba(0, 0, 0, 0.8);
   padding: 4px 8px;
@@ -1486,7 +1489,7 @@ img.ad.mediumRectangle {
   margin: 0 -15px;
   *zoom: 1;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 #main:before,
 #main:after {
@@ -1495,6 +1498,15 @@ img.ad.mediumRectangle {
 }
 #main:after {
   clear: both;
+}
+#main p:first-child {
+  margin-top: 0;
+}
+#main p  + h2,
+#main p  + h3,
+#main p  + h4,
+#main p  + h5 {
+  margin-top: 40px;
 }
 #content {
   display: inline;
@@ -1926,6 +1938,19 @@ footer .copyright {
   #feature {
     height: 200px;
   }
+  #feature.multiple {
+    height: 150px;
+    width: 300px;
+  }
+  #feature.multiple li .article {
+    top: 25px;
+  }
+  #feature.multiple img {
+    width: 300px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+  }
   #feature img {
     min-height: 200px;
   }
@@ -2085,6 +2110,10 @@ footer .copyright {
   .widget.widget_search #s {
     width: 230px;
   }
+  .widget ul.ads li,
+  .widget ol.ads li {
+    padding: 8px;
+  }
   footer .widget {
     float: none;
     display: block:
@@ -2096,6 +2125,7 @@ footer .copyright {
 @media only screen and (min-width: 480px) and (max-width: 960px) {
   body {
     margin: 0 auto;
+    width: 640px;
   }
   .inner {
     width: 600px;
@@ -2121,6 +2151,13 @@ footer .copyright {
   }
   #feature {
     height: 300px;
+  }
+  #feature.multiple {
+    width: 600px;
+    height: 200px;
+  }
+  #feature.multiple li .article {
+    top: 30px;
   }
   #feature img {
     min-height: 300px;

@@ -57,8 +57,17 @@
 // =================================================================
 //	Typography
 // =================================================================
+html {
+	background: lighten(@primaryColor, 40%);
+}
+
 body {
 	color: @bodyColor;
+
+	background: #fff;
+	width: @total-width + 40;
+	margin: 0 auto;
+	.box-shadow(0 0 20px rgba(0,0,0,0.1));
 
 	// Nifty Feature for capable browser.
 	// Shimming this would be overkill
@@ -620,13 +629,14 @@ img.ad {
 }
 
 #secondaryNav {
-	border-top: 1px solid darken(@primaryColor, 5%);
+	border-top: 1px solid darken(@primaryColor, 7%);
 	background: @primaryColor;
 	width: @total-width;
-	margin: 0 auto;
+	margin: 8px auto 0;
 	text-transform: uppercase;
 	font-weight: 600;
-	.box-shadow(0 6px 5px -5px rgba(0,0,0,0.2));
+	border-bottom: 1px solid darken(@primaryColor, 7%);
+	width: @total-width + 40;
 
 	ul {
 		padding: 0; margin: 0;
@@ -645,7 +655,7 @@ img.ad {
 		
 		a {
 			display: block;
-			padding: 8px 12px;
+			padding: 12px 12px;
 			color: lighten(@primaryColor, 50%);
 			
 			&:hover {
@@ -753,10 +763,10 @@ img.ad {
 
 // Feature
 #feature {
-	.box-shadow(0 5px 10px -4px rgba(0,0,0,0.2));
 	overflow: hidden !important;
-	height: 500px;
+	height: 450px;
 	background: #111;
+	border-bottom: 1px solid lighten(@darkColor, 65%);
 
 	&.small {
 		width: @total-width;
@@ -766,7 +776,7 @@ img.ad {
 	&.multiple {
 		background: transparent;
 		.row();
-		width: @total-width;
+		width: @total-width + 40;
 		margin: 0 auto;
 
 		li {
@@ -776,26 +786,25 @@ img.ad {
 		}
 
 		img {
-			width: 650px;
+			width: 672px;
 			height: 400px;
 			min-height: 400px;
-			.box-shadow(1px 0 20px rgba(0,0,0,0.2));
 		}
 
 		height: 400px;
 
 		.current {
 			.column(4);
+			width: 672px;
 			margin-left: 0;
 			background: #000;
-			.box-shadow(10px 0 10px -10px rgba(0,0,0,0.2));
 		}
 
 		.others {
 			background: lighten(@darkColor, 70%);
 			.column(2);
 			margin-left: -15px;
-			width: 370px;
+			width: 388px;
 			margin-right: 0;
 
 			img {
@@ -842,10 +851,15 @@ img.ad {
 		}
 	}
 	
-	img {
-		width: 100%;
-		height: auto;
-		min-height: 500px;
+	&.full {
+		li {
+			width: 1060px;
+		}
+
+		img {
+			width: @total-width + 40;
+			height: auto;
+		}
 	}
 	
 	ul {
@@ -866,7 +880,7 @@ img.ad {
 		
 		.copyright {
 			position: absolute;
-			bottom: 4px; right: 50px;
+			bottom: 24px; right: 50px;
 			background: rgba(0,0,0,0.8);
 			padding: 4px 8px;
 			color: #fff;
@@ -961,7 +975,17 @@ img.ad {
 #main {
 	.row(6);
 	.container();
-	margin-top: 32px;
+	margin-top: 24px;
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	p {
+		& + h2, & + h3, & + h4, & + h5 {
+			margin-top: 40px;
+		}
+	}
 }
 
 #content {
@@ -1329,6 +1353,25 @@ footer {
 	#feature {
 		height: 200px;
 
+
+		&.multiple {
+			height: 150px;
+			width: 300px;
+
+			li {
+				.article {
+					top: 25px;
+				}
+			}
+
+			img {
+				width: 300px;
+				height: 150px;
+				max-height: 150px;
+				min-height: 150px;
+			}
+		}
+
 		img {
 			min-height: 200px;
 		}
@@ -1521,6 +1564,12 @@ footer {
 				width: 230px;
 			}
 		}
+
+		ul.ads, ol.ads {
+			li {
+				padding: 8px;
+			}
+		}
 	}
 
 	footer {
@@ -1537,6 +1586,7 @@ footer {
 @media only screen and (min-width : 480px) and (max-width : 960px) {
 	body {
 		margin: 0 auto;
+		width: 640px;
 	}
 
 	.inner {
@@ -1569,6 +1619,17 @@ footer {
 
 	#feature {
 		height: 300px;
+
+		&.multiple {
+			width: 600px;
+			height: 200px;
+
+			li {
+				.article {
+					top: 30px;
+				}
+			}
+		}
 
 		img {
 			min-height: 300px;
