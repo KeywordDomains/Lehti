@@ -1,9 +1,9 @@
 		<footer>
 			<div class="inner widgets">
 				<?php
-					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer') ) {
+					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-widgets') ) {
 						?>
-							&copy;
+
 						<?php
 					}
 				?>

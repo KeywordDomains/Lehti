@@ -54,7 +54,7 @@ $(document).ready(function() {
 	});
 	
 	$('#showMobileNav').on('click', function(e) {
-		$('#primaryNav').slideToggle();
+		$('#primaryNav, #secondaryNav').slideToggle();
 	});
 
 if(window.innerWidth > 481) {
@@ -63,12 +63,17 @@ if(window.innerWidth > 481) {
 	    itemSelector : 'article',
 	    columnWidth : (window.innerWidth > 960) ? 342 : 312,
 	});
-}
 
-$('#primaryNav li, #secondaryNav li').hover(function() {
+	$('#primaryNav li, #secondaryNav li').hover(function() {
 	$(this).children('.sub-menu').stop().slideDown(100);
 }, function() {
 	$(this).children('.sub-menu').stop().slideUp(100);
+});
+}
+
+yepnope({
+	test: Modernizr.touch,
+	yep: 'touch.js'
 });
 
 });

@@ -26,7 +26,7 @@
 // ==================================================================
 
 // Link Color
-@linkColor: #0a74ba; // 0a74ba
+@linkColor: #8BAD13; // 0a74ba
 
 // Add another color here, if your link color isn't your primary color
 @primaryColor: @linkColor;
@@ -629,13 +629,13 @@ img.ad {
 }
 
 #secondaryNav {
-	border-top: 1px solid darken(@primaryColor, 10%);
+	border-top: 1px solid darken(@primaryColor, 4%);
 	background: @primaryColor;
 	width: @total-width;
 	margin: 8px auto 0;
 	text-transform: uppercase;
 	font-weight: 600;
-	border-bottom: 1px solid darken(@primaryColor, 9%);
+	border-bottom: 1px solid darken(@primaryColor, 4%);
 	width: @total-width + 40;
 
 	ul {
@@ -1398,19 +1398,31 @@ footer {
 		top: 0; right: 20px;
 	}
 	
-	#primaryNav {
+	#primaryNav, #secondaryNav {
 		display: none;
 		width: 300px;
 		margin: 0 auto;
 		display: none;
+		background: transparent;
 		
 		li {
 			width: 300px;
 			text-align: center;
 			float: none;
+
+			&.active, &.current-menu-item, &.current_page_item, &.current-cat, &.current_page_ancestor, &.current_page_parent, &.current-menu-ancestor, &.current-menu-parent {
+				a {
+					color: darken(@bodyColor, 20%);
+				}
+			}
 			
 			a {
 				border-bottom: 1px solid lighten(@darkColor, 67%);
+				color: @darkColor;
+
+				&:hover {
+					color: darken(@bodyColor, 20%);
+				}
 
 				&:after, &::after {
 					content: "";
@@ -1437,22 +1449,6 @@ footer {
 						border-bottom: none;
 					}
 				}
-			}
-		}
-	}
-	
-	#secondaryNav {
-		display: none;
-		width: 300px;
-		margin: 0 auto;
-		
-		li {
-			text-align: center;
-			float: none;
-			border-bottom: 1px solid lighten(@darkColor, 63%);
-			
-			&:last-child {
-				border-bottom: none;
 			}
 		}
 	}

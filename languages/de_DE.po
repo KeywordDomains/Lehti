@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: boloday\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-27 10:59+0100\n"
-"PO-Revision-Date: 2012-06-27 10:59+0100\n"
+"POT-Creation-Date: 2012-07-02 09:19+0100\n"
+"PO-Revision-Date: 2012-07-02 09:22+0100\n"
 "Last-Translator: Lucas Nolte <lnolte@i.biz>\n"
 "Language-Team: Lucas Nolte <lnolte@i.biz>\n"
 "MIME-Version: 1.0\n"
@@ -76,6 +76,11 @@ msgstr "Diesen Beitrag kommentieren"
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
 msgstr "Angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Aus Konto abmelden\">Abmelden?</a>"
 
+#: ../feature-full.php:42
+#: ../feature-small.php:41
+msgid "Photo &copy;"
+msgstr "Foto &copy;"
+
 #: ../footer.php:12
 msgid "Proudly powered by <a href=\"http://wordpress.org\">WordPress"
 msgstr "Stolz von <a href=\"http://wordpress.org\">WordPress</a> angetrieben"
@@ -104,7 +109,15 @@ msgstr "Bearbeiten"
 msgid "Your browser is <em>ancient!</em> <a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">install Google Chrome Frame</a> to experience this site."
 msgstr "Ihr Browser ist <em>ziemlich veraltet!</em> <a href=\"http://browsehappy.com/\">Installieren Sie einen neueren Browser</a> oder <a href=\"http://www.google.com/chromeframe/?redirect=true\">installieren Sie Google Chrome Frame</a> um diese Seite in voller Schönheit zu betrachten."
 
-#: ../index.php:43
+#: ../index.php:32
+msgid "&laquo; Previous"
+msgstr "&laquo; Zurück"
+
+#: ../index.php:33
+msgid "Next &raquo"
+msgstr "Weiter &raquo;"
+
+#: ../index.php:45
 #: ../page-contact.php:123
 #: ../page-full.php:42
 #: ../page-sitemap.php:33
@@ -315,11 +328,6 @@ msgstr "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Angetrieben von WordPress, der topmodernen Publishing Plattform."
 
-#: ../single-head.php:28
-#: ../single.php:37
-msgid "Photo &copy;"
-msgstr "Foto &copy;"
-
 #: ../single.php:98
 msgid "Related Posts"
 msgstr "Ähnliche Beiträge"
@@ -389,4 +397,153 @@ msgstr "Mittel"
 #: ../inc/widgets/flickr.php:85
 msgid "Thumbnail"
 msgstr "Thumbnail"
+
+#: ../options/options.php:49
+#: ../options/options.php:51
+#, fuzzy
+msgid "Options"
+msgstr "Theme Einstellungen"
+
+#: ../options/options.php:63
+msgid "<span id=\"footer-thankyou\">Options Panel created using the <a href=\""
+msgstr ""
+
+#: ../options/options.php:247
+#: ../options/options.php:248
+#: ../options/options.php:681
+msgid "Import / Export"
+msgstr ""
+
+#: ../options/options.php:274
+#: ../options/options.php:275
+#: ../options/options.php:700
+#: ../options/options.php:782
+msgid "Dev Mode Info"
+msgstr ""
+
+#: ../options/options.php:330
+msgid "Are you sure? Resetting will loose all custom values."
+msgstr ""
+
+#: ../options/options.php:647
+#: ../options/options.php:807
+msgid "Reset to Defaults"
+msgstr ""
+
+#: ../options/options.php:653
+#, fuzzy
+msgid "<strong>Settings Imported!</strong>"
+msgstr "<strong>Autor:</strong>"
+
+#: ../options/options.php:655
+#, fuzzy
+msgid "<strong>Settings Saved!</strong>"
+msgstr "<strong>Tags:</strong>"
+
+#: ../options/options.php:659
+msgid "<strong>Settings have changed!, you should save them!</strong>"
+msgstr ""
+
+#: ../options/options.php:660
+msgid "<strong><span></span> error(s) were found!</strong>"
+msgstr ""
+
+#: ../options/options.php:662
+msgid "<strong><span></span> warning(s) were found!</strong>"
+msgstr ""
+
+#: ../options/options.php:718
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../options/options.php:720
+#, fuzzy
+msgid "Import Options"
+msgstr "Theme Einstellungen"
+
+#: ../options/options.php:728
+msgid "Input your backup file below and hit Import to restore your sites options from a backup."
+msgstr ""
+
+#: ../options/options.php:741
+msgid "Input the URL to another sites options set and hit Import to load the options from that site."
+msgstr ""
+
+#: ../options/options.php:751
+msgid "Import"
+msgstr ""
+
+#: ../options/options.php:751
+msgid "WARNING! This will overwrite any existing options, please proceed with caution!"
+msgstr ""
+
+#: ../options/options.php:754
+msgid "Export Options"
+msgstr ""
+
+#: ../options/options.php:756
+msgid "Here you can copy/download your themes current option settings. Keep this safe as you can use it as a backup should anything go wrong. Or you can use it to restore your settings on this site (or any other site). You also have the handy option to copy the link to yours sites settings. Which you can then use to duplicate on another site"
+msgstr ""
+
+#: ../options/fields/color_gradient/field_color_gradient.php:35
+msgid "From:"
+msgstr ""
+
+#: ../options/fields/color_gradient/field_color_gradient.php:38
+msgid " To:"
+msgstr ""
+
+#: ../options/fields/google_webfonts/field_google_webfonts.php:42
+msgid "The fonts provided below are free to use custom fonts from the <a href=\"http://www.google.com/webfonts\" target=\"_blank\">Google Web Fonts directory</a>.<br/>Please <a href=\"http://www.google.com/webfonts\" target=\"_blank\">browse the directory</a> to preview a font, then select your choice below."
+msgstr ""
+
+#: ../options/fields/multi_text/field_multi_text.php:39
+#: ../options/fields/multi_text/field_multi_text.php:46
+#: ../options/fields/multi_text/field_multi_text.php:50
+msgid "Remove"
+msgstr ""
+
+#: ../options/fields/multi_text/field_multi_text.php:54
+msgid "Add More"
+msgstr ""
+
+#: ../options/fields/upload/field_upload.php:39
+msgid "Browse"
+msgstr ""
+
+#: ../options/fields/upload/field_upload.php:40
+msgid "Remove Upload"
+msgstr ""
+
+#: ../options/validation/color/validation_color.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../options/validation/comma_numeric/validation_comma_numeric.php:15
+msgid "You must provide a comma seperated list of numerical values for this option."
+msgstr ""
+
+#: ../options/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../options/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../options/validation/no_html/validation_no_html.php:15
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../options/validation/no_special_chars/validation_no_special_chars.php:15
+msgid "You must not enter any special characters in this field, all special characters have been removed."
+msgstr ""
+
+#: ../options/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../options/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
 
