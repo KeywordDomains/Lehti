@@ -1,8 +1,8 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <!--<![endif]-->
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
@@ -12,7 +12,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<?php
+		// Set the logo
 		$boloday = get_option('boloday');
+		$logo = ($boloday[1] != "") ? $boloday[1] : get_bloginfo('template_directory').'/img/logo.png';
+
+		// Facebook OpenGraph
+		if (have_posts()):while(have_posts()):the_post(); endwhile; endif;
+		if(is_single()) {
+	?>
+		<meta property="og:url" content="<?php the_permalink(); ?>">
+		<meta property="og:title" content="<?php the_title(); ?>">
+		<meta property="og:type" content="article">
+		<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt()); ?>">
+		<?php if(has_post_thumbnail() && function_exists('wp_get_attachment_thumb_url')) { ?>
+			<meta property="og:image" content="<?php echo wp_get_attachment_thumb_url(get_post_thumbnail_id()); ?>">
+		<?php } ?>
+	<?php
+		}
+		else {
+	?>
+		<meta property="og:url" content="<?php echo home_url(); ?>">
+		<meta property="og:title" content="<?php echo bloginfo('title'); ?>">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="<?php bloginfo('description'); ?>">
+		<meta property="og:iamge" content="<?php echo $logo; ?>">
+
+	<?php
+		}
 	?>
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/<?php echo $boloday[2]; ?>.css">
@@ -35,11 +61,7 @@
 			<a href="<?php echo home_url(); ?>">
 				<div id="branding">
 					<img src="<?php
-						if($boloday[1] !== "") {
-							echo $boloday[1];
-						} else {
-							echo get_bloginfo('template_directory').'/img/logo.png';
-						}
+						echo $logo;
 					?>" id="logo" alt="<?php bloginfo('name'); bloginfo('description'); ?>">
 				</div>
 			</a>

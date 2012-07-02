@@ -659,7 +659,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 .button:hover {
   text-decoration: none;
-  background-color: #d1d1d1;
+  background-color: #e1e1e1;
 }
 input[type="button"]:active,
 input[type="submit"]:active,
