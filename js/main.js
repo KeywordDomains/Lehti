@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
-
 	$(window).on('resize', function(e) {
 		$('#feature.full li').css('width', window.innerWidth);
 	});
@@ -65,11 +63,13 @@ if(window.innerWidth > 481) {
 });
 }
 
-// jQuery Masonry
+// Only Load Masonry and Fancybox on larger screens to save bandwidth on mobile
 yepnope({
 	test: (window.innerWidth > 481),
-	yep: $('body').attr('data-templateUrl') + '/js/vendor/masonry.js',
+	yep: [$('body').attr('data-templateUrl') + '/js/vendor/masonry.js', $('body').attr('data-templateUrl') + '/js/vendor/fancybox.js'],
 	complete: function() {
+		$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
+		
 		$('#content .parent').masonry({
 	    	// options
 	    	itemSelector : 'article',
