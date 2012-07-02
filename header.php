@@ -28,7 +28,7 @@
 
 	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr.js"></script>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-templateUrl="<?php bloginfo('template_directory'); ?>">
 	<!--[if lt IE 8]><div class="chromeframe"><?php _e('Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.', 'boloday'); ?></div><![endif]-->
 	<header id="mastHead">
 		<div class="inner">

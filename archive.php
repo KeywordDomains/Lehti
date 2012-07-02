@@ -16,7 +16,9 @@
 	'format' => '?paged=%#%',
 	'current' => max( 1, get_query_var('paged') ),
 	'total' => $wp_query->max_num_pages,
-	'type' => 'list'
+	'type' => 'list',
+	'prev_text' => __('&laquo; Previous', 'boloday'),
+	'next_text' => __('Next &raquo', 'boloday')
 ) ); ?>
 				</div>
 

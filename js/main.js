@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
 
-	$('#feature.full li').css('width', window.innerWidth);
 	$(window).on('resize', function(e) {
 		$('#feature.full li').css('width', window.innerWidth);
 	});
@@ -55,7 +54,7 @@ $(document).ready(function() {
 	});
 	
 	$('#showMobileNav').on('click', function(e) {
-		$('#primaryNav').slideToggle();
+		$('#primaryNav, #secondaryNav').slideToggle();
 	});
 
 if(window.innerWidth > 481) {
@@ -64,12 +63,35 @@ if(window.innerWidth > 481) {
 	    itemSelector : 'article',
 	    columnWidth : (window.innerWidth > 960) ? 342 : 312,
 	});
-}
 
-$('#primaryNav li, #secondaryNav li').hover(function() {
+	$('#primaryNav li, #secondaryNav li').hover(function() {
 	$(this).children('.sub-menu').stop().slideDown(100);
 }, function() {
 	$(this).children('.sub-menu').stop().slideUp(100);
+});
+}
+
+// Touch Device Specifics
+yepnope({
+	test: Modernizr.touch,
+	yep: $('body').attr('data-templateUrl') + '/js/vendor/hammer.js',
+	callback: function(result, key) {
+		var feature = $('#feature')[0];
+		var hammer = new Hammer(feature, {
+			tap_max_interval: 700
+		});
+
+		// Let Touch Devices swipe the feature instead of using those old-fashioned buttons
+		hammer.onswipe = function(e) {
+			autoAnimate = false;
+
+			if(e.direction === "left") {
+				next();
+			} else if(e.direction === "right") {
+				prev();
+			}
+		}
+	}
 });
 
 });

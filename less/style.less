@@ -26,7 +26,7 @@
 // ==================================================================
 
 // Link Color
-@linkColor: #f5b92e; // 0a74ba
+@linkColor: #8BAD13; // 0a74ba
 
 // Add another color here, if your link color isn't your primary color
 @primaryColor: @linkColor;
@@ -57,8 +57,17 @@
 // =================================================================
 //	Typography
 // =================================================================
+html {
+	background: lighten(@darkColor, 69%);
+}
+
 body {
 	color: @bodyColor;
+
+	background: #fff;
+	width: @total-width + 40;
+	margin: 0 auto;
+	.box-shadow(0 0 20px rgba(0,0,0,0.1));
 
 	// Nifty Feature for capable browser.
 	// Shimming this would be overkill
@@ -204,26 +213,24 @@ input[type="button"], input[type="submit"], .button {
 	border: none;
 	padding: 8px 16px;
 
-	.gradient(#f1f1f1, #e1e1e1);
+	background-color: #f1f1f1;
 	color: @darkColor;
-	.border-radius(4px);
-	border: 1px solid #e1e1e1;
+	.border-radius(2px);
+	.box-shadow(~"0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 4px -2px rgba(0,0,0,0.4)");
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 12px;
 	border: 1px solid #e1e1e1;
-	border-bottom: 2px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	cursor: pointer;
 	
-	.box-shadow(0 5px 5px -4px rgba(0,0,0,0.3));
-
 	&:hover {
 		text-decoration: none;
+		background-color: #d1d1d1;
 	}
 
 	&:active, &::active {
-		.box-shadow(0 5px 5px -5px rgba(0,0,0,0.3));
-		margin-top: 1px;
-		border-bottom: 1px solid #dcdcdc;
+		.box-shadow(~"0 1px 0 rgba(0, 0, 0, 0.2) inset");
 	}
 
 	&.large {
@@ -232,104 +239,69 @@ input[type="button"], input[type="submit"], .button {
 	}
 	
 	&.primary {
-		color: lighten(@linkColor, 25%);
-		.gradient(@linkColor, darken(@linkColor, 10%));
+		color: lighten(@linkColor, 35%);
+		background-color: @linkColor;
 		border-color: darken(@linkColor, 10%);
-		border-bottom-color: darken(@linkColor, 20%);
 		
 		&:hover {
-			.gradient(darken(@linkColor, 10%), darken(@linkColor, 20%));
+			background-color: darken(@linkColor, 10%);
 			border-color: darken(@linkColor, 20%);
 			border-bottom-color: darken(@linkColor, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@linkColor, 20%);
 		}
 	}
 
 	&.blue {
-		color: lighten(@blue, 25%);
-		.gradient(@blue, darken(@blue, 10%));
+		color: lighten(@blue, 35%);
+		background: @blue;
 		border-color: darken(@blue, 10%);
-		border-bottom-color: darken(@blue, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@blue, 10%), darken(@blue, 20%));
+			background: darken(@blue, 10%);
 			border-color: darken(@blue, 20%);
-			border-bottom-color: darken(@blue, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@blue, 20%);
 		}
 	}
 
 	&.green {
-		color: lighten(@green, 25%);
-		.gradient(@green, darken(@green, 10%));
+		color: lighten(@green, 35%);
+		background: @green;
 		border-color: darken(@green, 10%);
-		border-bottom-color: darken(@green, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@green, 10%), darken(@green, 20%));
+			background: darken(@green, 10%);
 			border-color: darken(@green, 20%);
-			border-bottom-color: darken(@green, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@green, 20%);
 		}
 	}
 
 	&.orange {
-		color: lighten(@orange, 25%);
-		.gradient(@orange, darken(@orange, 10%));
+		color: lighten(@orange, 35%);
+		background: @orange;
 		border-color: darken(@orange, 10%);
-		border-bottom-color: darken(@orange, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@orange, 10%), darken(@orange, 20%));
+			background: darken(@orange, 10%);
 			border-color: darken(@orange, 20%);
-			border-bottom-color: darken(@orange, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@orange, 20%);
 		}
 	}
 
 	&.red {
-		color: lighten(@red, 25%);
-		.gradient(@red, darken(@red, 10%));
+		color: lighten(@red, 35%);
+		background: @red;
 		border-color: darken(@red, 10%);
-		border-bottom-color: darken(@red, 20%);
-		
+	
 		&:hover {
-			.gradient(darken(@red, 10%), darken(@red, 20%));
+			background: darken(@red, 10%);
 			border-color: darken(@red, 20%);
-			border-bottom-color: darken(@red, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@red, 20%);
 		}
 	}
 
 	&.inverse {
-		color: lighten(@complementary, 25%);
-		.gradient(@complementary, darken(@complementary, 10%));
+		color: lighten(@complementary, 35%);
+		background: @complementary;
 		border-color: darken(@complementary, 10%);
-		border-bottom-color: darken(@complementary, 20%);
 		
 		&:hover {
-			.gradient(darken(@complementary, 10%), darken(@complementary, 20%));
+			background: darken(@complementary, 10%);
 			border-color: darken(@complementary, 20%);
-			border-bottom-color: darken(@complementary, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@complementary, 20%);
 		}
 	}	
 	
@@ -620,13 +592,14 @@ img.ad {
 }
 
 #secondaryNav {
-	border-top: 1px solid darken(@primaryColor, 5%);
+	border-top: 1px solid darken(@primaryColor, 4%);
 	background: @primaryColor;
 	width: @total-width;
-	margin: 0 auto;
+	margin: 8px auto 0;
 	text-transform: uppercase;
 	font-weight: 600;
-	.box-shadow(0 6px 5px -5px rgba(0,0,0,0.2));
+	border-bottom: 1px solid darken(@primaryColor, 4%);
+	width: @total-width + 40;
 
 	ul {
 		padding: 0; margin: 0;
@@ -645,7 +618,7 @@ img.ad {
 		
 		a {
 			display: block;
-			padding: 8px 12px;
+			padding: 12px 12px;
 			color: lighten(@primaryColor, 50%);
 			
 			&:hover {
@@ -753,11 +726,9 @@ img.ad {
 
 // Feature
 #feature {
-	.box-shadow(0 5px 10px -4px rgba(0,0,0,0.2));
 	overflow: hidden !important;
-	height: 500px;
+	height: 450px;
 	background: #111;
-
 	&.small {
 		width: @total-width;
 		margin: 0 auto;
@@ -766,7 +737,7 @@ img.ad {
 	&.multiple {
 		background: transparent;
 		.row();
-		width: @total-width;
+		width: @total-width + 40;
 		margin: 0 auto;
 
 		li {
@@ -776,27 +747,25 @@ img.ad {
 		}
 
 		img {
-			width: 650px;
+			width: 672px;
 			height: 400px;
 			min-height: 400px;
-			.box-shadow(1px 0 20px rgba(0,0,0,0.2));
 		}
 
 		height: 400px;
 
 		.current {
 			.column(4);
+			width: 672px;
 			margin-left: 0;
 			background: #000;
-			.box-shadow(10px 0 10px -10px rgba(0,0,0,0.2));
 		}
 
 		.others {
-			background: lighten(@darkColor, 70%);
 			.column(2);
-			margin-left: -15px;
-			width: 370px;
+			width: 360px;
 			margin-right: 0;
+			margin-left: -15px;
 
 			img {
 				.box-shadow(none);
@@ -805,13 +774,9 @@ img.ad {
 			.entry {
 				background: lighten(@darkColor, 70%);
 				.clearfix();
-				padding: 14px 32px 14px 32px;
+				padding: 8px 24px 8px 24px;
+				margin: 6px 0;
 				border-bottom: 1px solid lighten(@darkColor, 65%);
-
-				&:last-child {
-					border-bottom: none;
-					padding-bottom: 24px;
-				}
 
 				&:hover {
 					background: lighten(desaturate(@primaryColor, 45%), 50%);
@@ -842,10 +807,15 @@ img.ad {
 		}
 	}
 	
-	img {
-		width: 100%;
-		height: auto;
-		min-height: 500px;
+	&.full {
+		li {
+			width: 1060px;
+		}
+
+		img {
+			width: @total-width + 40;
+			height: auto;
+		}
 	}
 	
 	ul {
@@ -866,7 +836,7 @@ img.ad {
 		
 		.copyright {
 			position: absolute;
-			bottom: 4px; right: 50px;
+			bottom: 24px; right: 50px;
 			background: rgba(0,0,0,0.8);
 			padding: 4px 8px;
 			color: #fff;
@@ -957,11 +927,29 @@ img.ad {
 	}
 }
 
+.touch {
+	#feature {
+		.nav {
+			display: none;
+		}
+	}
+}
+
 // Main
 #main {
 	.row(6);
 	.container();
-	margin-top: 32px;
+	margin-top: 24px;
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	p {
+		& + h2, & + h3, & + h4, & + h5 {
+			margin-top: 40px;
+		}
+	}
 }
 
 #content {
@@ -1329,6 +1317,25 @@ footer {
 	#feature {
 		height: 200px;
 
+
+		&.multiple {
+			height: 150px;
+			width: 300px;
+
+			li {
+				.article {
+					top: 25px;
+				}
+			}
+
+			img {
+				width: 300px;
+				height: 150px;
+				max-height: 150px;
+				min-height: 150px;
+			}
+		}
+
 		img {
 			min-height: 200px;
 		}
@@ -1362,19 +1369,31 @@ footer {
 		top: 0; right: 20px;
 	}
 	
-	#primaryNav {
+	#primaryNav, #secondaryNav {
 		display: none;
 		width: 300px;
 		margin: 0 auto;
 		display: none;
+		background: transparent;
 		
 		li {
 			width: 300px;
 			text-align: center;
 			float: none;
+
+			&.active, &.current-menu-item, &.current_page_item, &.current-cat, &.current_page_ancestor, &.current_page_parent, &.current-menu-ancestor, &.current-menu-parent {
+				a {
+					color: darken(@bodyColor, 20%);
+				}
+			}
 			
 			a {
 				border-bottom: 1px solid lighten(@darkColor, 67%);
+				color: @darkColor;
+
+				&:hover {
+					color: darken(@bodyColor, 20%);
+				}
 
 				&:after, &::after {
 					content: "";
@@ -1401,22 +1420,6 @@ footer {
 						border-bottom: none;
 					}
 				}
-			}
-		}
-	}
-	
-	#secondaryNav {
-		display: none;
-		width: 300px;
-		margin: 0 auto;
-		
-		li {
-			text-align: center;
-			float: none;
-			border-bottom: 1px solid lighten(@darkColor, 63%);
-			
-			&:last-child {
-				border-bottom: none;
 			}
 		}
 	}
@@ -1521,6 +1524,12 @@ footer {
 				width: 230px;
 			}
 		}
+
+		ul.ads, ol.ads {
+			li {
+				padding: 8px;
+			}
+		}
 	}
 
 	footer {
@@ -1537,6 +1546,7 @@ footer {
 @media only screen and (min-width : 480px) and (max-width : 960px) {
 	body {
 		margin: 0 auto;
+		width: 640px;
 	}
 
 	.inner {
@@ -1569,6 +1579,17 @@ footer {
 
 	#feature {
 		height: 300px;
+
+		&.multiple {
+			width: 600px;
+			height: 200px;
+
+			li {
+				.article {
+					top: 30px;
+				}
+			}
+		}
 
 		img {
 			min-height: 300px;

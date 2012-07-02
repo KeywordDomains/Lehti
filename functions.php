@@ -32,8 +32,8 @@ function boloday_theme_setup(){
 			'after_title'   => '</h3>' ));
 		
 		register_sidebar(array(
-			'name'          => "Footer",
-			'id'            => 'footer',
+			'name'          => "Footer Widgets",
+			'id'            => 'footer-widgets',
 			'description'   => 'Widgets shown in the footer area of the theme',
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

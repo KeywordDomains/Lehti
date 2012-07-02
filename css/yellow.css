@@ -540,7 +540,7 @@ h3,
   margin-bottom: 16px;
 }
 a {
-  color: #8bad13;
+  color: #f4b116;
   text-decoration: none;
 }
 a:hover {
@@ -584,7 +584,7 @@ h3.title,
 h4.title,
 h5.title,
 h6.title {
-  color: #8bad13;
+  color: #f4b116;
   margin-bottom: 1.2em;
 }
 blockquote {
@@ -618,11 +618,11 @@ code {
 }
 ::-moz-selection {
   color: #fff;
-  background: #8bad13;
+  background: #f4b116;
 }
 ::selection {
   color: #fff;
-  background: #8bad13;
+  background: #f4b116;
 }
 input,
 textarea {
@@ -685,25 +685,25 @@ input[type="submit"].large,
 input[type="button"].primary,
 input[type="submit"].primary,
 .button.primary {
-  color: #caec53;
-  background: -webkit-linear-gradient(top, #8bad13, #667f0e);
-  background: -moz-linear-gradient(top, #8bad13, #667f0e);
-  background: -o-linear-gradient(top, #8bad13, #667f0e);
-  background: -ms-linear-gradient(top, #8bad13, #667f0e);
-  background: linear-gradient(top, #8bad13, #667f0e);
-  border-color: #667f0e;
-  border-bottom-color: #415109;
+  color: #fada90;
+  background: -webkit-linear-gradient(top, #f4b116, #cd920a);
+  background: -moz-linear-gradient(top, #f4b116, #cd920a);
+  background: -o-linear-gradient(top, #f4b116, #cd920a);
+  background: -ms-linear-gradient(top, #f4b116, #cd920a);
+  background: linear-gradient(top, #f4b116, #cd920a);
+  border-color: #cd920a;
+  border-bottom-color: #9d7007;
 }
 input[type="button"].primary:hover,
 input[type="submit"].primary:hover,
 .button.primary:hover {
-  background: -webkit-linear-gradient(top, #667f0e, #415109);
-  background: -moz-linear-gradient(top, #667f0e, #415109);
-  background: -o-linear-gradient(top, #667f0e, #415109);
-  background: -ms-linear-gradient(top, #667f0e, #415109);
-  background: linear-gradient(top, #667f0e, #415109);
-  border-color: #415109;
-  border-bottom-color: #1c2304;
+  background: -webkit-linear-gradient(top, #cd920a, #9d7007);
+  background: -moz-linear-gradient(top, #cd920a, #9d7007);
+  background: -o-linear-gradient(top, #cd920a, #9d7007);
+  background: -ms-linear-gradient(top, #cd920a, #9d7007);
+  background: linear-gradient(top, #cd920a, #9d7007);
+  border-color: #9d7007;
+  border-bottom-color: #6c4d05;
 }
 input[type="button"].primary:active,
 input[type="submit"].primary:active,
@@ -711,7 +711,7 @@ input[type="submit"].primary:active,
 input[type="button"].primary::active,
 input[type="submit"].primary::active,
 .button.primary::active {
-  border-bottom-color: #415109;
+  border-bottom-color: #9d7007;
 }
 input[type="button"].blue,
 input[type="submit"].blue,
@@ -840,25 +840,25 @@ input[type="submit"].red::active,
 input[type="button"].inverse,
 input[type="submit"].inverse,
 .button.inverse {
-  color: #7553ec;
-  background: -webkit-linear-gradient(top, #3513ad, #270e7f);
-  background: -moz-linear-gradient(top, #3513ad, #270e7f);
-  background: -o-linear-gradient(top, #3513ad, #270e7f);
-  background: -ms-linear-gradient(top, #3513ad, #270e7f);
-  background: linear-gradient(top, #3513ad, #270e7f);
-  border-color: #270e7f;
-  border-bottom-color: #190951;
+  color: #90b0fa;
+  background: -webkit-linear-gradient(top, #1659f4, #0a45cd);
+  background: -moz-linear-gradient(top, #1659f4, #0a45cd);
+  background: -o-linear-gradient(top, #1659f4, #0a45cd);
+  background: -ms-linear-gradient(top, #1659f4, #0a45cd);
+  background: linear-gradient(top, #1659f4, #0a45cd);
+  border-color: #0a45cd;
+  border-bottom-color: #07349d;
 }
 input[type="button"].inverse:hover,
 input[type="submit"].inverse:hover,
 .button.inverse:hover {
-  background: -webkit-linear-gradient(top, #270e7f, #190951);
-  background: -moz-linear-gradient(top, #270e7f, #190951);
-  background: -o-linear-gradient(top, #270e7f, #190951);
-  background: -ms-linear-gradient(top, #270e7f, #190951);
-  background: linear-gradient(top, #270e7f, #190951);
-  border-color: #190951;
-  border-bottom-color: #0b0423;
+  background: -webkit-linear-gradient(top, #0a45cd, #07349d);
+  background: -moz-linear-gradient(top, #0a45cd, #07349d);
+  background: -o-linear-gradient(top, #0a45cd, #07349d);
+  background: -ms-linear-gradient(top, #0a45cd, #07349d);
+  background: linear-gradient(top, #0a45cd, #07349d);
+  border-color: #07349d;
+  border-bottom-color: #05246c;
 }
 input[type="button"].inverse:active,
 input[type="submit"].inverse:active,
@@ -866,7 +866,7 @@ input[type="submit"].inverse:active,
 input[type="button"].inverse::active,
 input[type="submit"].inverse::active,
 .button.inverse::active {
-  border-bottom-color: #190951;
+  border-bottom-color: #07349d;
 }
 table {
   max-width: 100%;
@@ -1106,13 +1106,13 @@ img.ad.mediumRectangle {
   content: "";
 }
 #secondaryNav {
-  border-top: 1px solid #667f0e;
-  background: #8bad13;
+  border-top: 1px solid #cd920a;
+  background: #f4b116;
   width: 1020px;
   margin: 8px auto 0;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 1px solid #6a840e;
+  border-bottom: 1px solid #d2960a;
   width: 1060px;
 }
 #secondaryNav ul {
@@ -1145,7 +1145,7 @@ img.ad.mediumRectangle {
 #secondaryNav li a {
   display: block;
   padding: 12px 12px;
-  color: #eef9c6;
+  color: #ffffff;
 }
 #secondaryNav li a:hover {
   color: #fff;
@@ -1339,11 +1339,11 @@ img.ad.mediumRectangle {
   clear: both;
 }
 #feature.multiple .others .entry:hover {
-  background: #e6ebd4;
-  color: #8bad13;
+  background: #ffffff;
+  color: #f4b116;
 }
 #feature.multiple .others .entry:hover a {
-  color: #8bad13;
+  color: #f4b116;
 }
 #feature.multiple .others .entry h3 {
   font-size: 16px;
@@ -1414,7 +1414,7 @@ img.ad.mediumRectangle {
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  background: #8bad13;
+  background: #f4b116;
   color: #fff;
 }
 #feature li .article {
@@ -1736,7 +1736,7 @@ img.ad.mediumRectangle {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   opacity: 0;
-  background: rgba(139, 173, 19, 0.7) url(../img/article.png) no-repeat center center;
+  background: rgba(244, 177, 22, 0.7) url(../img/article.png) no-repeat center center;
   height: 150px;
   width: 310px;
   position: absolute;
@@ -1892,7 +1892,7 @@ footer .copyright {
   display: none;
 }
 .chromeframe {
-  background: #8bad13;
+  background: #f4b116;
   padding: 8px 16px;
   color: #fff;
   text-align: center;
@@ -1968,7 +1968,7 @@ footer .copyright {
     display: block;
     width: 40px;
     height: 40px;
-    background: #8bad13 url(../img/showMobileNav.png) no-repeat center center;
+    background: #f4b116 url(../img/showMobileNav.png) no-repeat center center;
     position: absolute;
     top: 0;
     right: 20px;
