@@ -58,18 +58,25 @@ $(document).ready(function() {
 	});
 
 if(window.innerWidth > 481) {
-	$('#content .parent').masonry({
-	    // options
-	    itemSelector : 'article',
-	    columnWidth : (window.innerWidth > 960) ? 342 : 312,
-	});
-
 	$('#primaryNav li, #secondaryNav li').hover(function() {
 	$(this).children('.sub-menu').stop().slideDown(100);
 }, function() {
 	$(this).children('.sub-menu').stop().slideUp(100);
 });
 }
+
+// jQuery Masonry
+yepnope({
+	test: (window.innerWidth > 481),
+	yep: $('body').attr('data-templateUrl') + '/js/vendor/masonry.js',
+	complete: function() {
+		$('#content .parent').masonry({
+	    	// options
+	    	itemSelector : 'article',
+	    	columnWidth : (window.innerWidth > 960) ? 342 : 312,
+		});
+	}
+});
 
 // Touch Device Specifics
 yepnope({
