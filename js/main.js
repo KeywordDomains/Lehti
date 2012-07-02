@@ -71,9 +71,27 @@ if(window.innerWidth > 481) {
 });
 }
 
+// Touch Device Specifics
 yepnope({
 	test: Modernizr.touch,
-	yep: 'touch.js'
+	yep: $('body').attr('data-templateUrl') + '/js/vendor/hammer.js',
+	callback: function(result, key) {
+		var feature = $('#feature')[0];
+		var hammer = new Hammer(feature, {
+			tap_max_interval: 700
+		});
+
+		// Let Touch Devices swipe the feature instead of using those old-fashioned buttons
+		hammer.onswipe = function(e) {
+			autoAnimate = false;
+
+			if(e.direction === "left") {
+				next();
+			} else if(e.direction === "right") {
+				prev();
+			}
+		}
+	}
 });
 
 });

@@ -1478,6 +1478,9 @@ img.ad.mediumRectangle {
 .no-rgba #feature .article .meta {
   background: #000;
 }
+.touch #feature .nav {
+  display: none;
+}
 #main {
   display: block;
   width: 1050px;
