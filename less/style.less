@@ -213,26 +213,24 @@ input[type="button"], input[type="submit"], .button {
 	border: none;
 	padding: 8px 16px;
 
-	.gradient(#f1f1f1, #e1e1e1);
+	background-color: #f1f1f1;
 	color: @darkColor;
-	.border-radius(4px);
-	border: 1px solid #e1e1e1;
+	.border-radius(2px);
+	.box-shadow(~"0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 4px -2px rgba(0,0,0,0.4)");
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 12px;
 	border: 1px solid #e1e1e1;
-	border-bottom: 2px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	cursor: pointer;
 	
-	.box-shadow(0 5px 5px -4px rgba(0,0,0,0.3));
-
 	&:hover {
 		text-decoration: none;
+		background-color: #d1d1d1;
 	}
 
 	&:active, &::active {
-		.box-shadow(0 5px 5px -5px rgba(0,0,0,0.3));
-		margin-top: 1px;
-		border-bottom: 1px solid #dcdcdc;
+		.box-shadow(~"0 1px 0 rgba(0, 0, 0, 0.2) inset");
 	}
 
 	&.large {
@@ -241,104 +239,69 @@ input[type="button"], input[type="submit"], .button {
 	}
 	
 	&.primary {
-		color: lighten(@linkColor, 25%);
-		.gradient(@linkColor, darken(@linkColor, 10%));
+		color: lighten(@linkColor, 35%);
+		background-color: @linkColor;
 		border-color: darken(@linkColor, 10%);
-		border-bottom-color: darken(@linkColor, 20%);
 		
 		&:hover {
-			.gradient(darken(@linkColor, 10%), darken(@linkColor, 20%));
+			background-color: darken(@linkColor, 10%);
 			border-color: darken(@linkColor, 20%);
 			border-bottom-color: darken(@linkColor, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@linkColor, 20%);
 		}
 	}
 
 	&.blue {
-		color: lighten(@blue, 25%);
-		.gradient(@blue, darken(@blue, 10%));
+		color: lighten(@blue, 35%);
+		background: @blue;
 		border-color: darken(@blue, 10%);
-		border-bottom-color: darken(@blue, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@blue, 10%), darken(@blue, 20%));
+			background: darken(@blue, 10%);
 			border-color: darken(@blue, 20%);
-			border-bottom-color: darken(@blue, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@blue, 20%);
 		}
 	}
 
 	&.green {
-		color: lighten(@green, 25%);
-		.gradient(@green, darken(@green, 10%));
+		color: lighten(@green, 35%);
+		background: @green;
 		border-color: darken(@green, 10%);
-		border-bottom-color: darken(@green, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@green, 10%), darken(@green, 20%));
+			background: darken(@green, 10%);
 			border-color: darken(@green, 20%);
-			border-bottom-color: darken(@green, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@green, 20%);
 		}
 	}
 
 	&.orange {
-		color: lighten(@orange, 25%);
-		.gradient(@orange, darken(@orange, 10%));
+		color: lighten(@orange, 35%);
+		background: @orange;
 		border-color: darken(@orange, 10%);
-		border-bottom-color: darken(@orange, 20%);
-		
+
 		&:hover {
-			.gradient(darken(@orange, 10%), darken(@orange, 20%));
+			background: darken(@orange, 10%);
 			border-color: darken(@orange, 20%);
-			border-bottom-color: darken(@orange, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@orange, 20%);
 		}
 	}
 
 	&.red {
-		color: lighten(@red, 25%);
-		.gradient(@red, darken(@red, 10%));
+		color: lighten(@red, 35%);
+		background: @red;
 		border-color: darken(@red, 10%);
-		border-bottom-color: darken(@red, 20%);
-		
+	
 		&:hover {
-			.gradient(darken(@red, 10%), darken(@red, 20%));
+			background: darken(@red, 10%);
 			border-color: darken(@red, 20%);
-			border-bottom-color: darken(@red, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@red, 20%);
 		}
 	}
 
 	&.inverse {
-		color: lighten(@complementary, 25%);
-		.gradient(@complementary, darken(@complementary, 10%));
+		color: lighten(@complementary, 35%);
+		background: @complementary;
 		border-color: darken(@complementary, 10%);
-		border-bottom-color: darken(@complementary, 20%);
 		
 		&:hover {
-			.gradient(darken(@complementary, 10%), darken(@complementary, 20%));
+			background: darken(@complementary, 10%);
 			border-color: darken(@complementary, 20%);
-			border-bottom-color: darken(@complementary, 30%);
-		}
-		
-		&:active, &::active {
-			border-bottom-color: darken(@complementary, 20%);
 		}
 	}	
 	

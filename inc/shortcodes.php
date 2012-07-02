@@ -5,7 +5,7 @@
  */
 
 function dropcap_shortcode( $atts, $content ) {
-	return '<span class="dropcap ' . $atts['style'] . '">' . $content . '</span>';
+	return '<span class="dropcap">' . $content . '</span>';
 }
 add_shortcode('dropcap', 'dropcap_shortcode');
 

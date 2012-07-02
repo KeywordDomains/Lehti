@@ -640,29 +640,26 @@ input[type="submit"],
 .button {
   border: none;
   padding: 8px 16px;
-  background: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background: -moz-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background: -o-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background: -ms-linear-gradient(top, #f1f1f1, #e1e1e1);
-  background: linear-gradient(top, #f1f1f1, #e1e1e1);
+  background-color: #f1f1f1;
   color: #444444;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 4px -2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 4px -2px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 2px 4px -2px rgba(0,0,0,0.4);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
   border: 1px solid #e1e1e1;
-  border-bottom: 2px solid #dcdcdc;
-  -webkit-box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #dcdcdc;
+  cursor: pointer;
 }
 input[type="button"]:hover,
 input[type="submit"]:hover,
 .button:hover {
   text-decoration: none;
+  background-color: #d1d1d1;
 }
 input[type="button"]:active,
 input[type="submit"]:active,
@@ -670,11 +667,9 @@ input[type="submit"]:active,
 input[type="button"]::active,
 input[type="submit"]::active,
 .button::active {
-  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
-  margin-top: 1px;
-  border-bottom: 1px solid #dcdcdc;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
 input[type="button"].large,
 input[type="submit"].large,
@@ -685,188 +680,81 @@ input[type="submit"].large,
 input[type="button"].primary,
 input[type="submit"].primary,
 .button.primary {
-  color: #caec53;
-  background: -webkit-linear-gradient(top, #8bad13, #667f0e);
-  background: -moz-linear-gradient(top, #8bad13, #667f0e);
-  background: -o-linear-gradient(top, #8bad13, #667f0e);
-  background: -ms-linear-gradient(top, #8bad13, #667f0e);
-  background: linear-gradient(top, #8bad13, #667f0e);
+  color: #d8f181;
+  background-color: #8bad13;
   border-color: #667f0e;
-  border-bottom-color: #415109;
 }
 input[type="button"].primary:hover,
 input[type="submit"].primary:hover,
 .button.primary:hover {
-  background: -webkit-linear-gradient(top, #667f0e, #415109);
-  background: -moz-linear-gradient(top, #667f0e, #415109);
-  background: -o-linear-gradient(top, #667f0e, #415109);
-  background: -ms-linear-gradient(top, #667f0e, #415109);
-  background: linear-gradient(top, #667f0e, #415109);
+  background-color: #667f0e;
   border-color: #415109;
   border-bottom-color: #1c2304;
-}
-input[type="button"].primary:active,
-input[type="submit"].primary:active,
-.button.primary:active,
-input[type="button"].primary::active,
-input[type="submit"].primary::active,
-.button.primary::active {
-  border-bottom-color: #415109;
 }
 input[type="button"].blue,
 input[type="submit"].blue,
 .button.blue {
-  color: #63d0ff;
-  background: -webkit-linear-gradient(top, #009fe3, #007bb0);
-  background: -moz-linear-gradient(top, #009fe3, #007bb0);
-  background: -o-linear-gradient(top, #009fe3, #007bb0);
-  background: -ms-linear-gradient(top, #009fe3, #007bb0);
-  background: linear-gradient(top, #009fe3, #007bb0);
+  color: #97e0ff;
+  background: #009fe3;
   border-color: #007bb0;
-  border-bottom-color: #00587d;
 }
 input[type="button"].blue:hover,
 input[type="submit"].blue:hover,
 .button.blue:hover {
-  background: -webkit-linear-gradient(top, #007bb0, #00587d);
-  background: -moz-linear-gradient(top, #007bb0, #00587d);
-  background: -o-linear-gradient(top, #007bb0, #00587d);
-  background: -ms-linear-gradient(top, #007bb0, #00587d);
-  background: linear-gradient(top, #007bb0, #00587d);
+  background: #007bb0;
   border-color: #00587d;
-  border-bottom-color: #00344a;
-}
-input[type="button"].blue:active,
-input[type="submit"].blue:active,
-.button.blue:active,
-input[type="button"].blue::active,
-input[type="submit"].blue::active,
-.button.blue::active {
-  border-bottom-color: #00587d;
 }
 input[type="button"].green,
 input[type="submit"].green,
 .button.green {
-  color: #e0f784;
-  background: -webkit-linear-gradient(top, #bfeb10, #98bb0d);
-  background: -moz-linear-gradient(top, #bfeb10, #98bb0d);
-  background: -o-linear-gradient(top, #bfeb10, #98bb0d);
-  background: -ms-linear-gradient(top, #bfeb10, #98bb0d);
-  background: linear-gradient(top, #bfeb10, #98bb0d);
+  color: #ecfab4;
+  background: #bfeb10;
   border-color: #98bb0d;
-  border-bottom-color: #718c09;
 }
 input[type="button"].green:hover,
 input[type="submit"].green:hover,
 .button.green:hover {
-  background: -webkit-linear-gradient(top, #98bb0d, #718c09);
-  background: -moz-linear-gradient(top, #98bb0d, #718c09);
-  background: -o-linear-gradient(top, #98bb0d, #718c09);
-  background: -ms-linear-gradient(top, #98bb0d, #718c09);
-  background: linear-gradient(top, #98bb0d, #718c09);
+  background: #98bb0d;
   border-color: #718c09;
-  border-bottom-color: #4b5c06;
-}
-input[type="button"].green:active,
-input[type="submit"].green:active,
-.button.green:active,
-input[type="button"].green::active,
-input[type="submit"].green::active,
-.button.green::active {
-  border-bottom-color: #718c09;
 }
 input[type="button"].orange,
 input[type="submit"].orange,
 .button.orange {
-  color: #f7bc84;
-  background: -webkit-linear-gradient(top, #eb7c10, #bb630d);
-  background: -moz-linear-gradient(top, #eb7c10, #bb630d);
-  background: -o-linear-gradient(top, #eb7c10, #bb630d);
-  background: -ms-linear-gradient(top, #eb7c10, #bb630d);
-  background: linear-gradient(top, #eb7c10, #bb630d);
+  color: #fad6b4;
+  background: #eb7c10;
   border-color: #bb630d;
-  border-bottom-color: #8c4a09;
 }
 input[type="button"].orange:hover,
 input[type="submit"].orange:hover,
 .button.orange:hover {
-  background: -webkit-linear-gradient(top, #bb630d, #8c4a09);
-  background: -moz-linear-gradient(top, #bb630d, #8c4a09);
-  background: -o-linear-gradient(top, #bb630d, #8c4a09);
-  background: -ms-linear-gradient(top, #bb630d, #8c4a09);
-  background: linear-gradient(top, #bb630d, #8c4a09);
+  background: #bb630d;
   border-color: #8c4a09;
-  border-bottom-color: #5c3006;
-}
-input[type="button"].orange:active,
-input[type="submit"].orange:active,
-.button.orange:active,
-input[type="button"].orange::active,
-input[type="submit"].orange::active,
-.button.orange::active {
-  border-bottom-color: #8c4a09;
 }
 input[type="button"].red,
 input[type="submit"].red,
 .button.red {
-  color: #f79984;
-  background: -webkit-linear-gradient(top, #eb3910, #bb2d0d);
-  background: -moz-linear-gradient(top, #eb3910, #bb2d0d);
-  background: -o-linear-gradient(top, #eb3910, #bb2d0d);
-  background: -ms-linear-gradient(top, #eb3910, #bb2d0d);
-  background: linear-gradient(top, #eb3910, #bb2d0d);
+  color: #fac1b4;
+  background: #eb3910;
   border-color: #bb2d0d;
-  border-bottom-color: #8c2209;
 }
 input[type="button"].red:hover,
 input[type="submit"].red:hover,
 .button.red:hover {
-  background: -webkit-linear-gradient(top, #bb2d0d, #8c2209);
-  background: -moz-linear-gradient(top, #bb2d0d, #8c2209);
-  background: -o-linear-gradient(top, #bb2d0d, #8c2209);
-  background: -ms-linear-gradient(top, #bb2d0d, #8c2209);
-  background: linear-gradient(top, #bb2d0d, #8c2209);
+  background: #bb2d0d;
   border-color: #8c2209;
-  border-bottom-color: #5c1606;
-}
-input[type="button"].red:active,
-input[type="submit"].red:active,
-.button.red:active,
-input[type="button"].red::active,
-input[type="submit"].red::active,
-.button.red::active {
-  border-bottom-color: #8c2209;
 }
 input[type="button"].inverse,
 input[type="submit"].inverse,
 .button.inverse {
-  color: #7553ec;
-  background: -webkit-linear-gradient(top, #3513ad, #270e7f);
-  background: -moz-linear-gradient(top, #3513ad, #270e7f);
-  background: -o-linear-gradient(top, #3513ad, #270e7f);
-  background: -ms-linear-gradient(top, #3513ad, #270e7f);
-  background: linear-gradient(top, #3513ad, #270e7f);
+  color: #9a81f1;
+  background: #3513ad;
   border-color: #270e7f;
-  border-bottom-color: #190951;
 }
 input[type="button"].inverse:hover,
 input[type="submit"].inverse:hover,
 .button.inverse:hover {
-  background: -webkit-linear-gradient(top, #270e7f, #190951);
-  background: -moz-linear-gradient(top, #270e7f, #190951);
-  background: -o-linear-gradient(top, #270e7f, #190951);
-  background: -ms-linear-gradient(top, #270e7f, #190951);
-  background: linear-gradient(top, #270e7f, #190951);
+  background: #270e7f;
   border-color: #190951;
-  border-bottom-color: #0b0423;
-}
-input[type="button"].inverse:active,
-input[type="submit"].inverse:active,
-.button.inverse:active,
-input[type="button"].inverse::active,
-input[type="submit"].inverse::active,
-.button.inverse::active {
-  border-bottom-color: #190951;
 }
 table {
   max-width: 100%;
