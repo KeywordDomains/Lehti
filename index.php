@@ -24,8 +24,8 @@
 
 			<div id="pagination">
 					<?php echo paginate_links( array(
-	'base' => '%_%' ,
-	'format' => '?paged=%#%',
+	'base' => home_url().'%_%',
+	'format' => '/page/%#%/',
 	'current' => max( 1, get_query_var('paged') ),
 	'total' => $wp_query->max_num_pages,
 	'type' => 'list',
