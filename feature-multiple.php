@@ -17,7 +17,7 @@
 		<li>
 			<div class="desktop">
 				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail('feature_full'); ?>
+					<?php the_post_thumbnail('feature_multiple'); ?>
 				</a>
 			</div>
 			<div class="mobile">
