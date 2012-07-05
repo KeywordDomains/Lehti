@@ -111,6 +111,7 @@
 												<?php truncate_post(60); ?>
 											</p></li>
 									<?php endwhile; ?>
+									<?php wp_reset_query(); ?>
 								</ul>
 							</div> <!-- post-foot -->
 							<?php

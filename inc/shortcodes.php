@@ -33,3 +33,9 @@ function success_shortcode( $atts, $content ) {
 add_shortcode('info', 'info_shortcode');
 add_shortcode('error', 'error_shortcode');
 add_shortcode('success', 'success_shortcode');
+
+function content_toggle_shortcode( $atts, $content ) {
+	return '<div class="toggle"><a href="#" class="showLink">' . $atts['title'] . '</a><div class="content">'.do_shortcode($content).'</div></div>';
+}
+
+add_shortcode('toggle', 'content_toggle_shortcode');

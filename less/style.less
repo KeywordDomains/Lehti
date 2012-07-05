@@ -26,7 +26,7 @@
 // ==================================================================
 
 // Link Color
-@linkColor: #8BAD13; // 0a74ba
+@linkColor: #F5B92E; // 0a74ba
 
 // Add another color here, if your link color isn't your primary color
 @primaryColor: @linkColor;
@@ -226,7 +226,7 @@ input[type="button"], input[type="submit"], .button {
 	
 	&:hover {
 		text-decoration: none;
-		background-color: #d1d1d1;
+		background-color: #e1e1e1;
 	}
 
 	&:active, &::active {
@@ -391,6 +391,45 @@ table {
 		background: lighten(@green, 35%);
 		color: darken(@green, 25%);
 		border-color: @green;
+	}
+}
+
+.toggle {
+	.showLink {
+		display: block;
+		position: relative;
+
+		&:after, &::after {
+			content: "+";
+			position: absolute;
+			right: 0;
+			font-weight: bold;
+		}
+
+		&.active {
+			&:after, &::after {
+				-webkit-transform: rotate(45deg);
+			}
+		}
+	}
+
+	.content {
+		display: none;
+		border-bottom: 1px solid lighten(@darkColor, 67%);
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+.no-js {
+	.toggle {
+		a.showLink {
+			display: none;
+		}
+
+		.content {
+			display: block;
+		}
 	}
 }
 

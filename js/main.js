@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
-
 	$(window).on('resize', function(e) {
 		$('#feature.full li').css('width', window.innerWidth);
 	});
@@ -58,18 +56,36 @@ $(document).ready(function() {
 	});
 
 if(window.innerWidth > 481) {
-	$('#content .parent').masonry({
-	    // options
-	    itemSelector : 'article',
-	    columnWidth : (window.innerWidth > 960) ? 342 : 312,
-	});
-
 	$('#primaryNav li, #secondaryNav li').hover(function() {
 	$(this).children('.sub-menu').stop().slideDown(100);
 }, function() {
 	$(this).children('.sub-menu').stop().slideUp(100);
 });
 }
+
+// Shortcode magic
+$('.toggle .showLink').click(function(e) {
+	e.preventDefault();
+
+	$(this).toggleClass('active').next('.content').slideToggle();
+
+	return false;
+});
+
+// Only Load Masonry and Fancybox on larger screens to save bandwidth on mobile
+yepnope({
+	test: (window.innerWidth > 481),
+	yep: [$('body').attr('data-templateUrl') + '/js/vendor/masonry.js', $('body').attr('data-templateUrl') + '/js/vendor/fancybox.js'],
+	complete: function() {
+		$("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']").fancybox();
+		
+		$('#content .parent').masonry({
+	    	// options
+	    	itemSelector : 'article',
+	    	columnWidth : (window.innerWidth > 960) ? 342 : 312,
+		});
+	}
+});
 
 // Touch Device Specifics
 yepnope({
