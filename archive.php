@@ -12,8 +12,8 @@
 
 			<div id="pagination">
 					<?php echo paginate_links( array(
-	'base' =>  $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '%_%',
-	'format' => '/page/%#%/',
+	'base' =>  preg_replace('/\/page\/[^\/]+/', '', $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]). '%_%',
+	'format' => 'page/%#%/',
 	'current' => max( 1, get_query_var('paged') ),
 	'total' => $wp_query->max_num_pages,
 	'type' => 'list',
