@@ -394,6 +394,45 @@ table {
 	}
 }
 
+.toggle {
+	.showLink {
+		display: block;
+		position: relative;
+
+		&:after, &::after {
+			content: "+";
+			position: absolute;
+			right: 0;
+			font-weight: bold;
+		}
+
+		&.active {
+			&:after, &::after {
+				-webkit-transform: rotate(45deg);
+			}
+		}
+	}
+
+	.content {
+		display: none;
+		border-bottom: 1px solid lighten(@darkColor, 67%);
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+.no-js {
+	.toggle {
+		a.showLink {
+			display: none;
+		}
+
+		.content {
+			display: block;
+		}
+	}
+}
+
 // =================================================================
 // 	Figures
 // =================================================================

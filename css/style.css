@@ -817,6 +817,33 @@ table tbody + tbody {
   color: #5e7408;
   border-color: #bfeb10;
 }
+.toggle .showLink {
+  display: block;
+  position: relative;
+}
+.toggle .showLink:after,
+.toggle .showLink::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+.toggle .showLink.active:after,
+.toggle .showLink.active::after {
+  -webkit-transform: rotate(45deg);
+}
+.toggle .content {
+  display: none;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.no-js .toggle a.showLink {
+  display: none;
+}
+.no-js .toggle .content {
+  display: block;
+}
 .alignleft img,
 .alignright img,
 .alignnone img,

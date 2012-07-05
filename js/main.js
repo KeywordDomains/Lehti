@@ -63,6 +63,15 @@ if(window.innerWidth > 481) {
 });
 }
 
+// Shortcode magic
+$('.toggle .showLink').click(function(e) {
+	e.preventDefault();
+
+	$(this).toggleClass('active').next('.content').slideToggle();
+
+	return false;
+});
+
 // Only Load Masonry and Fancybox on larger screens to save bandwidth on mobile
 yepnope({
 	test: (window.innerWidth > 481),
